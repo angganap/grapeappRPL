@@ -49,7 +49,7 @@ body{
 .leaderboard{
     width: 100%;
     margin-top: 30px;
-    padding: 15px 10px;
+    padding: 15px 15px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 19px;
@@ -59,5 +59,87 @@ body{
     font-size: 20px;
     font-weight: 700;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.ava-lead{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.coin-amount{
+    font-weight: 700;
+}
+
+.load-more{
+    float: right;
+}
+
+.clear{
+    clear: right;
+}
+
+.right-content{
+    padding: 0 40px !important;
+}
+.right-content h2{
+    font-weight: 700;
+}
+.right-content h5{
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.box-class{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #3E36B9;
+    border-radius: 19px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.level{
+    width: 100px;
+    height: 100px;
+    background-color: #5F37FF;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    border-radius: 50%;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.class-section{
+    padding-left: 20px !important;
+}
+.class-title{
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.class-desc{
+    display: block;
+}
+
+.icon-status{
+    display: inline-block;
+    float: right;
+    font-size: 22px;
+}
+
+.info-class{
+    width: auto;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 19px;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    font-size: 12px;
 }
