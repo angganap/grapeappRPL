@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+body{
+    bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif !important;
+}
+.navbar{
+    background-color: #F4DDF5 !important;
+}
+.nav-cont{
+    padding: 15px 0;
+}
+.navbar-brand img{
+    width: 200px;
+}
+.navbar-nav{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link{
+    margin-right: 50px;
+}
+
+.active{
+    font-weight: 700 !important;
+}
+
+.btn-logout{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    width: 120px;
+}
+
+.materi-wrapper{
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 19px;
+    padding: 20px 30px;
+    margin: 40px 0;
+}
+
+.materi-wrapper h1{
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: #fff !important;
+    background-color: #BE6FFB !important;
+    float: right;
+}
+.clear{
+    clear: right;
+}
+.right-content{
+    padding: 40px 20px 20px 20px;
+	position: sticky;
+	top: 0px;
+}
+
+.progress{
+    height: 40px !important;
+    border-radius: 20px !important;
+}
+.game-element{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.materi-nav{
+    width: 100%;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.materi-title{
+    background-color: #F4DDF5;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-top: 40px;
+    border: 1px solid #D9D9D9;
+}
+
+.list-materi{
+    background-color: #f2f2f2;
+    padding: 5px 15px;
+    border: 1px solid #D9D9D9;
+}
+
+.list-materi a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+}
+
+.left-game-elm{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.current{
+    background-color: #fff;
+}
+
+.col-right{
+    display: flex;
+    align-items: center;
+}
+
+.status{
+    background-color: none;
+    width: 25px;
+    height: 25px;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: middle;
+    border :2px solid #bcbcbc;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.check{
+    background-color: none;
+    border: 2px solid #49fc7e;
+    color: #49fc7e;
+}
