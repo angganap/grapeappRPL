@@ -16,6 +16,20 @@
 </head>
 
 <body>
+	<div class="black-wrapper change-pic-pop-up"></div>
+	<div class="card w-40 change-pic-pop-up card-change-pic">
+		<div class="card-body">
+			<i class="bi bi-x" id="close"></i>
+			<center><img src='/images/avatar.jpg' class="change-img" id="change-img"></center>
+			<form method="post" id="change-img-form">
+				<div class="input-group mb-3">
+					<input type="file" class="form-control" id="inputGroupFile02">
+					<label class="input-group-text" for="inputGroupFile02">Upload</label>
+				</div>
+			</form>
+			<buttton class="btn btn-primary w-100 mt-20" id="change-pic">Change Photo Profile</buttton>
+		</div>
+	</div>
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg ">
             <div class="container nav-cont">
@@ -150,20 +164,6 @@
     <div class="footer">
         <span>&#169; Tim GRAPEPro 2023</span>
     </div>
-    <!-- <div class="black-wrapper change-pic-pop-up"></div>
-	<div class="card w-40 change-pic-pop-up card-change-pic">
-		<div class="card-body">
-			<i class="bi bi-x" id="close"></i>
-			<center><img src='/images/avatar.jpg' class="change-img" id="change-img"></center>
-			<form method="post" id="change-img-form">
-				<div class="input-group mb-3">
-					<input type="file" class="form-control" id="inputGroupFile02">
-					<label class="input-group-text" for="inputGroupFile02">Upload</label>
-				</div>
-			</form>
-			<buttton class="btn btn-primary w-100 mt-20" id="change-pic">Change Photo Profile</buttton>
-		</div>
-	</div> -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

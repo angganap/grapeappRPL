@@ -1,9 +1,13 @@
 $('#profile-pic').click(function(){
-	$( ".change-pic-pop-up" ).css( "display", "block !important" );
+   const $elem = $(".change-pic-pop-up");
+   $elem[0].style.setProperty('display', 'block', 'important');
+   $elem[1].style.setProperty('display', 'block', 'important');
 })
 	
 $("#close").click(function(){
-	$(".change-pic-pop-up").css("display","none");
+   const $elem = $(".change-pic-pop-up");
+   $elem[0].style.setProperty('display', 'none', 'important');
+   $elem[1].style.setProperty('display', 'none', 'important');
 });
 
 $('#sign-out').click(function(){

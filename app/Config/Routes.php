@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/home', 'User\Home::index');
 $routes->get('/profile', 'User\Profile::index');
 $routes->get('/course/(:any)', 'Course\Course::index/$1');
+$routes->get('/test/awal/(:any)', 'Tests\Test::awal/$1');
 
 /*
  * --------------------------------------------------------------------

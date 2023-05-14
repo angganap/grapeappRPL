@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+body{
+    bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif !important;
+}
+.navbar{
+    background-color: #F4DDF5 !important;
+}
+.nav-cont{
+    padding: 15px 0;
+}
+.navbar-brand img{
+    width: 200px;
+}
+
+.test-title{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.navbar-nav{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link{
+    margin-right: 50px;
+}
+
+.active{
+    font-weight: 700 !important;
+}
+
+.btn-logout{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    width: 120px;
+}
+
+.content{
+    padding: 20px 100px !important;
+}
+
+.soal{
+    width: 100%;
+    text-align: center;
+}
+
+.soal span{
+    font-size: 14px;
+}
+
+.soal p{
+    margin-top: 20px;
+}
+
+#editor {
+	position: relative !important;
+	border: 1px solid lightgray;
+	margin: 20px auto;
+	height: 300px;
+	width: 100%;
+}
+
+.btn-run{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    padding: 5px 20px !important;
+}
+
+.output-title{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.output-desc{
+    background-color: #CCA4FF;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.preview-code{
+	background-color: #141414;
+	border: 1px solid lightgray;
+	margin: 10px auto;
+	height: 235px;
+	width: 100%;
+	padding: 12px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.btn-skip{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    padding: 5px 40px !important;
+    display: inline-block !important;
+    float: right !important;
+}
+
+.clear{
+    clear: right;
+}
+
+.error{
+	color: red;
+}
