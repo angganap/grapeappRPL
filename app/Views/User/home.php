@@ -99,7 +99,7 @@
                             <div class="level"><p>Lvl. 1</p></div>
                         </div>
                         <div class="col-lg-10 class-section">
-                            <span class="class-title">Pengenalan Pemrograman</span><i class="bi bi-calendar-check icon-status"></i>
+                            <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/1/1">Pengenalan Pemrograman</a></span><i class="bi bi-calendar-check icon-status"></i>
                             <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                             <div class="info-class">
                                 <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;1x Pengulangan</span>
@@ -115,7 +115,7 @@
                             <div class="level"><p>Lvl. 2</p></div>
                         </div>
                         <div class="col-lg-10 class-section">
-                            <span class="class-title">Pemrograman Struktur</span><i class="bi bi-lock icon-status"></i>
+                            <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/2/1">Pemrograman Struktur</a></span><i class="bi bi-lock icon-status"></i>
                             <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                             <div class="info-class">
                                 <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
@@ -132,7 +132,7 @@
                             <div class="level"><p>Lvl. 3</p></div>
                         </div>
                         <div class="col-lg-10 class-section">
-                            <span class="class-title">Kendali Pemrograman</span><i class="bi bi-lock icon-status"></i>
+                            <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/3/1">Kendali Pemrograman</a></span><i class="bi bi-lock icon-status"></i>
                             <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                             <div class="info-class">
                                 <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>

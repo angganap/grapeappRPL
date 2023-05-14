@@ -38,3 +38,43 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Software\\xampp\\htdocs\\grapeappRPL\\public\\index.php')
+CRITICAL - 2023-05-14 08:47:22 --> Invalid file: "course/course2/materi1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('course/course2/materi1.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('course/course2/materi1', [], true)
+ 3 APPPATH\Controllers\Course\Course.php(11): view('course/course2/materi1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Course\Course->index('2', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Course\Course))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Software\\xampp\\htdocs\\grapeappRPL\\public\\index.php')
+CRITICAL - 2023-05-14 08:47:27 --> Invalid file: "course/course3/materi1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('course/course3/materi1.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('course/course3/materi1', [], true)
+ 3 APPPATH\Controllers\Course\Course.php(11): view('course/course3/materi1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Course\Course->index('3', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Course\Course))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Software\\xampp\\htdocs\\grapeappRPL\\public\\index.php')
+CRITICAL - 2023-05-14 08:47:40 --> Invalid file: "course/course2/materi1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('course/course2/materi1.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('course/course2/materi1', [], true)
+ 3 APPPATH\Controllers\Course\Course.php(11): view('course/course2/materi1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Course\Course->index('2', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Course\Course))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Software\\xampp\\htdocs\\grapeappRPL\\public\\index.php')
+CRITICAL - 2023-05-14 08:48:38 --> Invalid file: "course/course2/materi1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('course/course2/materi1.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('course/course2/materi1', [], true)
+ 3 APPPATH\Controllers\Course\Course.php(11): view('course/course2/materi1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Course\Course->index('2', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Course\Course))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Software\\xampp\\htdocs\\grapeappRPL\\public\\index.php')

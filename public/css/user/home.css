@@ -126,6 +126,9 @@ body{
     display: inline-block;
     margin-bottom: 5px;
 }
+.class-title a{
+    color: #fff;
+}
 .class-desc{
     display: block;
 }
