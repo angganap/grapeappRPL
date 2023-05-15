@@ -25,8 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="../home">HOME</a>
-                    <a class="nav-link" href="../profile">ABOUT US</a>
+                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#">ABOUT US</a>
                     <a class="btn btn-logout" href="../login">LOGIN</a>
                 </div>
             </div>
