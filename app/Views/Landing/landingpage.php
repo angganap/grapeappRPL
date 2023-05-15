@@ -25,8 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="../home">HOME</a>
-                    <a class="nav-link" href="../profile">PROFILE</a>
+                    <a class="nav-link" href="../home">HOME</a>
+                    <a class="nav-link" href="../profile">ABOUT US</a>
                     <a class="btn btn-logout" href="../login">LOGIN</a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="/images/for_landing.png" alt="">
+                    <img class="for_land" src="/images/for_landing.png" alt="">
                 </div>
 
                 <div class="col-lg-6">

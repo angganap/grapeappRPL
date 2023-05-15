@@ -25,8 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="../home">HOME</a>
-                    <a class="nav-link" href="../profile">PROFILE</a>
+                    <a class="nav-link" href="../home">HOME</a>
+                    <a class="nav-link" href="../profile">ABOUT US</a>
                 </div>
             </div>
         </div>
@@ -52,9 +52,9 @@
                                     <input class="form-control" type="password" id="password">
                                 </div>
 
-                                <input class="btn btn-subnit" type="submit" value="LOGIN">
-                                <h4>atau</h4>
-                                <input type="submit" value="Login dengan google">
+                                <input class="btn btn-regis" type="submit" value="LOGIN">
+                                <h6 style="text-align:center">atau</h6>
+                                <input class="btn btn-google" type="submit" value="Login dengan google">
 
                             </div>
                         </form>

@@ -25,9 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="../home">HOME</a>
-                    <a class="nav-link" href="../profile">PROFILE</a>
-                    <a class="btn btn-logout" href="#">LOGOUT</a>
+                    <a class="nav-link" href="../home">HOME</a>
+                    <a class="nav-link" href="../profile">ABOUT US</a>
                 </div>
             </div>
         </div>
@@ -45,19 +44,27 @@
                         <h1 class="text-center">REGISTER</h1>
                         <form>
                             <div class="form-group">
-                                <label class="form-label" for="email">E-mail:</label>
-                                <input class="form-control" type="email" id="email">
+                                <label class="form-label" for="nama">Nama Lengkap:</label>
+                                <input class="form-control" type="text" id="nama">
 
                                 <div class="form-group">
-                                    <label class="form-label" for="password">Password:</label>
-                                    <input class="form-control" type="password" id="password">
+                                    <label class="form-label" for="username">Username:</label>
+                                    <input class="form-control" type="text" id="username">
                                 </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email">E-mail:</label>
+                                    <input class="form-control" type="email" id="email">
 
-                                <input class="btn btn-subnit" type="submit" value="REGISTER">
-                                <h4>atau</h4>
-                                <input type="submit" value="Login dengan google">
+                                    <div class="form-group">
+                                        <label class="form-label" for="password">Password:</label>
+                                        <input class="form-control" type="password" id="password">
+                                    </div>
 
-                            </div>
+                                    <input class="btn btn-regis" type="submit" value="REGISTER">
+                                    <h6 style="text-align:center">atau</h6>
+                                    <input class="btn btn-google" type="submit" value="Login dengan google">
+
+                                </div>
                         </form>
                     </div>
                 </div>
