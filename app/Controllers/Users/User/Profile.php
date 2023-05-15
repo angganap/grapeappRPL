@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Controllers\User;
+namespace App\Controllers\Users\User;
+
 use App\Controllers\BaseController;
 
 class Profile extends BaseController
