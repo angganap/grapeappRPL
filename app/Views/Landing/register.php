@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/images/for_login.png" alt="">
+                    <img class="center" src="/images/for_login.png" alt="">
                 </div>
 
                 <div class="col-md-6">
@@ -59,11 +59,9 @@
                                         <label class="form-label" for="password">Password:</label>
                                         <input class="form-control" type="password" id="password">
                                     </div>
-
-                                    <input class="btn btn-regis" type="submit" value="REGISTER">
-                                    <h6 style="text-align:center">atau</h6>
-                                    <input class="btn btn-google" type="submit" value="Login dengan google">
-
+                                    <input class="btn btn-regis center" type="submit" value="REGISTER">
+                                    <h6 class="center" style="margin-top: 10px">atau</h6>
+                                    <input class="btn btn-google center" type="submit" value="Login dengan google">
                                 </div>
                         </form>
                     </div>

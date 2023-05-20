@@ -1,0 +1,41 @@
+body{
+    bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif !important;
+}
+.navbar{
+    background-color: #F4DDF5 !important;
+}
+.nav-cont{
+    padding: 15px 0;
+}
+.navbar-brand img{
+    width: 200px;
+}
+.navbar-nav{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link{
+    margin-right: 50px;
+}
+
+.active{
+    font-weight: 700 !important;
+}
+
+.btn-logout{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    width: 120px;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #F4DDF5;
+    bottom: 0;
+    font-size: 14px;
+}

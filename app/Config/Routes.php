@@ -37,6 +37,7 @@ $routes->get('/home', 'Users\User\Home::index');
 $routes->get('/profile', 'Users\User\Profile::index');
 $routes->get('/course/(:any)', 'Users\Course\Course::index/$1');
 $routes->get('/test/awal/(:any)', 'Users\Tests\Test::awal/$1');
+$routes->get('/cobahome', 'Users\CobaHome::index');
 
 /*
  * --------------------------------------------------------------------
