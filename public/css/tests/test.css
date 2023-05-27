@@ -29,9 +29,6 @@ body{
     margin-right: 50px;
 }
 
-.active{
-    font-weight: 700 !important;
-}
 
 .btn-logout{
     background-color: #BE6FFB !important;
@@ -106,4 +103,86 @@ body{
 
 .error{
 	color: red;
+}
+
+.wrapper-test{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap-soal{
+    width: 100%;
+    background-color: #CCA4FF;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wrap-pilgan{
+	width: 80%;
+	min-height: 50px;
+	display: flex;
+	align-items: stretch;
+	padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pilgan-box{
+	width: 45%;
+	padding: 20px;
+	color: #000;
+	background-color: #CCA4FF;
+    border-radius: 10px;
+}
+.pilgan-box:hover{
+    cursor: pointer;
+}
+
+.f-right{
+    margin-left: auto;
+}
+
+#username{
+    font-weight: 700;
+}
+#result{
+    font-weight: 700;
+}
+
+.choose{
+    background-color: #BE6FFB;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrap-hasil{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.result{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #E0D7EC;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.btn-home{
+    display: block;
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    width: 120px;
+    margin: 30px;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #F4DDF5;
+    bottom: 0;
+    font-size: 14px;
 }

@@ -42,20 +42,19 @@
                 <div class="col-md-6">
                     <div class="form-regis">
                         <h1 class="text-center">LOGIN</h1>
-                        <form>
+                        <form method="post">
                             <div class="form-group">
-                                <label class="form-label" for="email">E-mail:</label>
-                                <input class="form-control" type="email" id="email">
+                                <label class="form-label" for="email">E-mail atau username:</label>
+                                <input class="form-control" type="text" id="username">
 
                                 <div class="form-group">
                                     <label class="form-label" for="password">Password:</label>
                                     <input class="form-control" type="password" id="password">
                                 </div>
 
-                                <input class="btn btn-regis" type="submit" value="LOGIN">
+                                <center><input class="btn btn-regis" type="submit" value="LOGIN"></center>
                                 <h6 style="text-align:center">atau</h6>
-                                <input class="btn btn-google" type="submit" value="Login dengan google">
-
+                                <center><input class="btn btn-google" type="submit" value="Login dengan google"></center>
                             </div>
                         </form>
                     </div>
@@ -69,6 +68,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/user/login.js"></script>
 </body>
 
 </html>

@@ -34,10 +34,17 @@ $routes->get('/landing', 'Users\Landings\Landing::index');
 $routes->get('/register', 'Users\Landings\Register::index');
 $routes->get('/login', 'Users\Landings\Login::index');
 $routes->get('/home', 'Users\User\Home::index');
+$routes->get('/logout', 'Users\User\Logout::logout');
 $routes->get('/profile', 'Users\User\Profile::index');
 $routes->get('/course/(:any)', 'Users\Course\Course::index/$1');
-$routes->get('/test/awal/(:any)', 'Users\Tests\Test::awal/$1');
+$routes->get('/test/awal/', 'Users\Tests\Test::awal');
 $routes->get('/cobahome', 'Users\CobaHome::index');
+
+
+$routes->post('/register/add','Users\Landings\Register::add');
+$routes->post('/login/logUser','Users\Landings\Login::logUser');
+$routes->post('/test/awal/result', 'Users\Tests\Test::done');
+
 
 /*
  * --------------------------------------------------------------------

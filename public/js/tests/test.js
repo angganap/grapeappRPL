@@ -40,3 +40,27 @@ $("#run").click(function(){
 		
 	});
 });
+
+$('.pilgan-box').click(function(){
+	$('.pilgan-box').removeClass('choose');
+	$(this).addClass('choose');
+})
+
+function result(id){
+	var id = $(id).data('id');
+	console.log(id);
+	$.ajax({
+        url: "./awal/result",
+        type: "POST",
+        data: {
+            id: id
+        },
+        cache: false,
+        success: function(dataResult){
+            var dataResult = JSON.parse(dataResult);
+            console.log(dataResult);
+            if(dataResult.statusCode == 200){
+            }
+        }
+    });
+}

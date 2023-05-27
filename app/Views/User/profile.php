@@ -41,7 +41,7 @@
 					<div class="navbar-nav ms-auto">
 						<a class="nav-link" aria-current="page" href="../home">HOME</a>
 						<a class="nav-link active" href="../profile">PROFILE</a>
-						<a class="btn btn-logout" href="#">LOGOUT</a>
+						<a class="btn btn-logout" href="<?= base_url('logout') ?>">LOGOUT</a>
 					</div>
 				</div>
 			</div>
@@ -51,14 +51,14 @@
 				<div class="col-lg-3">
 					<center><img src="/images/avatar.jpg" class="profile-pic" id="profile-pic">
 					</center>
-					<h3 class="profile-name">Antonio Harahap</h3>
-					<span class="username">@antonioH</span>
+					<h3 class="profile-name"><?= $nama ?></h3>
+					<span class="username">@<?= $username ?></span>
 					<div class="info">
-						<span class="info-item"><i class="bi bi-person-fill"></i>&nbsp;&nbsp; Level 2</span>
+						<span class="info-item"><i class="bi bi-person-fill"></i>&nbsp;&nbsp; Level <?= $level ?></span>
 						<span class="info-item"><i class="bi bi-trophy-fill"></i>&nbsp;&nbsp; 1st</span>
-						<span class="info-item"><i class="bi bi-diamond-fill"></i>&nbsp;&nbsp; 1020 Coin(s)</span>
-						<span class="info-item"><i class="bi bi-award-fill"></i>&nbsp;&nbsp; 3 Badges</span>
-						<span class="info-item"><i class="bi bi-star-fill"></i>&nbsp;&nbsp; 300 XP</span>
+						<span class="info-item"><i class="bi bi-diamond-fill"></i>&nbsp;&nbsp; <?= $coins ?> Coin(s)</span>
+						<span class="info-item"><i class="bi bi-award-fill"></i>&nbsp;&nbsp; 0 Badges</span>
+						<span class="info-item"><i class="bi bi-star-fill"></i>&nbsp;&nbsp; <?= $xp ?> XP</span>
 					</div>
 				</div>
 				<div class="col-lg-9 nav-info-user">
