@@ -48,22 +48,211 @@
                     </div>
                     <div class="wrapper-test">
                         <div class="wrap-soal">
-                            Tipe data yang memiliki 2 nilai, yakni True dan False, disebut dengan...
+                            Manakah dari pernyataan berikut yang merupakan deklarasi variabel yang benar dalam bahasa C?
                         </div>
                         <div class="wrap-pilgan">
                             <div class="pilgan-box f-left">
-                                A. Real
+                                A. int x = 5;
                             </div>
                             <div class="pilgan-box f-right">
-                                B. String
+                                B. float y = "Hello
                             </div>
                         </div>
                         <div class="wrap-pilgan">
                             <div class="pilgan-box f-left">
-                                C. Boolean
+                                C. boolean z = true;
                             </div>
                             <div class="pilgan-box f-right">
-                                D. Char
+                                D. string w = "Programming";
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Pilih jawaban yang menurutmu paling benar</p>
+                    </div>
+                    <div class="wrapper-test">
+                        <div class="wrap-soal">
+                            Apa output yang dihasilkan oleh program berikut dalam bahasa C?
+                            <pre class="code-wrapper">#include <stdio.h>
+
+int main() {
+    int x = 10;
+    printf("%d\n", x);
+    printf("%d\n", x + 5);
+    return 0;
+}
+				            </pre>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                A. 10, 15
+                            </div>
+                            <div class="pilgan-box f-right">
+                                B. 15, 20
+                            </div>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                C. 10, 10
+                            </div>
+                            <div class="pilgan-box f-right">
+                                D. 5, 10
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Pilih jawaban yang menurutmu paling benar</p>
+                    </div>
+                    <div class="wrapper-test">
+                        <div class="wrap-soal">
+                            Apa output yang dihasilkan oleh program berikut dalam bahasa C?
+                            <pre class="code-wrapper">#include <stdio.h>
+int main() {
+    int num = 10;
+    if (num > 5) {
+        printf("Number is greater than 5");
+    } else {
+        printf("Number is less than or equal to 5");
+    }
+    return 0;
+}
+				            </pre>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                A. Number is greater than 5
+                            </div>
+                            <div class="pilgan-box f-right">
+                                B. Number is less than or equal to 5
+                            </div>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                C. Number is greater than or equal to 5
+                            </div>
+                            <div class="pilgan-box f-right">
+                                D. Number is less than 5
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                </div>
+                <div class="carousel-item ">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Pilih jawaban yang menurutmu paling benar</p>
+                    </div>
+                    <div class="wrapper-test">
+                        <div class="wrap-soal">
+                            Berikut adalah prototipe fungsi dalam bahasa C:
+                            <pre class="code-wrapper">int calculateSum(int a, int b);
+				            </pre>
+                            Bagaimana cara mengimplementasikan fungsi ini untuk mengembalikan hasil penjumlahan dari dua parameter yang diberikan?
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                A. <pre>int calculateSum(int a, int b) {
+    return a + b;
+}
+</pre>
+                            </div>
+                            <div class="pilgan-box f-right">
+                                B. <pre>int calculateSum(int a, int b) {
+    sum = a + b;
+    return sum;
+}
+                            </pre>
+                            </div>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                C. <pre>calculateSum(int a, int b) {
+    return a + b;
+}
+</pre>
+                            </div>
+                            <div class="pilgan-box f-right">
+                                D. <pre>int calculateSum(int a, int b) {
+    printf("%d", a + b);
+}
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Pilih jawaban yang menurutmu paling benar</p>
+                    </div>
+                    <div class="wrapper-test">
+                        <div class="wrap-soal">
+                            Berikut adalah deklarasi array dalam bahasa C:
+                            <pre class="code-wrapper">int numbers[5] = {1, 2, 3, 4, 5};
+				            </pre>
+                            Bagaimana cara mengakses nilai yang terdapat pada indeks ke-3 dari array tersebut?
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                A. numbers[2]
+                            </div>
+                            <div class="pilgan-box f-right">
+                                B. numbers[3]
+                            </div>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                C. numbers[4]
+                            </div>
+                            <div class="pilgan-box f-right">
+                                D. numbers[5]
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Pilih jawaban yang menurutmu paling benar</p>
+                    </div>
+                    <div class="wrapper-test">
+                        <div class="wrap-soal">
+                            Dalam bahasa C, apa yang akan terjadi jika menggunakan operator ++ pada variabel yang bernilai NULL?
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                A. Akan terjadi error saat kompilasi.
+                            </div>
+                            <div class="pilgan-box f-right">
+                                B. Variabel akan tetap bernilai NULL.
+                            </div>
+                        </div>
+                        <div class="wrap-pilgan">
+                            <div class="pilgan-box f-left">
+                                C. Variabel akan menjadi 0.
+                            </div>
+                            <div class="pilgan-box f-right">
+                                D. Hasilnya tidak dapat diprediksi.
                             </div>
                         </div>
                     </div>
@@ -80,28 +269,234 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-8">
-                            <pre id="editor">#include &lt;stdio.h&gt;
+                            <pre class="editor">#include &lt;stdio.h&gt;
 
-int main(){
-    int a = 5;
-    int b = 4;
-    
-    //isi kode dibawah
-
-    printf("a lebih besar dari b");
+int main() {
+    int i;
+    for (i = 1; i <= 10; i++) {
+        if (/* Lengkapi kondisi */) {
+            printf("%d ", i);
+        }
+    }
+    return 0;
 }
 				            </pre>
                             <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
-                            <p class="output-desc">a lebih besar dari b</p>
+                            <p class="output-desc">1 3 5 7 9 </p>
                             <div class="preview-code"></div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-skip"
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
-                    <div class="clear"></div>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+
+int main() {
+    int num1 = 5;
+    int num2 = 8;
+    int num3 = 6;
+    float average;
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+    printf("Nilai rata-rata: %.2f", average);
+    return 0;
+}
+
+				            </pre>
+                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Nilai rata-rata: 6.33</p>
+                            <div class="preview-code"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+
+int countCharacter(char str[], char c) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+int main() {
+    char str[] = "Hello, World!";
+    char character = 'o';
+    int count = countCharacter(str, character);
+    printf("Jumlah kemunculan karakter '%c': %d\n", character, count);
+    return 0;
+}
+				            </pre>
+                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Jumlah kemunculan karakter o: 2</p>
+                            <div class="preview-code"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+#include &lt;string.h>&gt;
+
+int isPalindrome(char str[]) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+int main() {
+    char str[] = "madam";
+    int result = isPalindrome(str);
+    if (result == 1) {
+        printf("%s adalah palindrom\n", str);
+    } else {
+        printf("%s bukan palindrom\n", str);
+    }
+    return 0;
+}
+				            </pre>
+                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">madam adalah palindrom</p>
+                            <div class="preview-code"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+
+int countWords(char str[]) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+int main() {
+    char str[] = "Ini adalah contoh kalimat";
+    int wordCount = countWords(str);
+    printf("Jumlah kata: %d\n", wordCount);
+    return 0;
+}
+				            </pre>
+                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Jumlah kata: 4</p>
+                            <div class="preview-code"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+
+int isPrime(int n) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+void printPrimes(int start, int end) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+int main() {
+    int start = 1;
+    int end = 10;
+    printPrimes(start, end);
+    return 0;
+}
+
+				            </pre>
+                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Bilangan Prima antara 1 dan 10: 2 3 5 7 </p>
+                            <div class="preview-code"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
                 </div>
                 <div class="carousel-item">
                     <div class="soal">

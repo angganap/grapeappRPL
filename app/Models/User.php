@@ -21,4 +21,6 @@ class User extends Model
         $builder->where($where);
         return $builder->countAllResults();
     }
+
+    
 }

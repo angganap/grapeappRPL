@@ -15,7 +15,14 @@ class Home extends BaseController
             $id = $session->get('id');
             $isTest = $homeModel->isTest($id);
             if($isTest==1){
-                return view('user/home');
+                $user = $homeModel->getUser($id);
+                $ranks = $homeModel->getRanks();
+                $data = [
+                    'name' => $user[0]->name,
+                    'username' => $user[0]->username,
+                    'ranks' => $ranks
+                ];
+                return view('user/home',$data);
             }else{
                 return redirect()->to(base_url('test/awal'));
             }

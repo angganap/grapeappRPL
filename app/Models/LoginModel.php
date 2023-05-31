@@ -21,4 +21,12 @@ class LoginModel extends Model
         $query = $builder->getWhere($where);
         return $query->getResult();
     }
+
+    public function loginWithGoogle($email,$data){
+        if($this->countUsers($email)==0){
+            $builder = $this->db->table($this->table);
+            $builder->insert($data);
+        }
+        return $this->getUser($email);
+    }
 }

@@ -16,13 +16,15 @@ class Profile extends BaseController
             $isTest = $profileModel->isTest($id);
             if($isTest==1){
                 $user = $profileModel->getUser($id);
+                $rank = $profileModel->getRankUser($id);
                 $data =[
                     'nama'=>$user[0]->name,
                     'username' => $user[0]->username,
                     'level' => $user[0]->level,
                     'coins' => $user[0]->coin,
                     'xp' => $user[0]->xp,
-                    'username' => $user[0]->username
+                    'username' => $user[0]->username,
+                    'rank' => $rank
                 ];
                 return view('user/profile',$data);
             }else{
@@ -32,4 +34,6 @@ class Profile extends BaseController
             return redirect()->to(base_url('login'));
         }
     }
+
+   
 }

@@ -1,6 +1,10 @@
-var editor = ace.edit("editor");
-editor.setTheme("ace/theme/twilight");
-editor.session.setMode("ace/mode/c_cpp");
+var elements = document.querySelectorAll('.editor');
+
+elements.forEach(function(element) {
+    var editor = ace.edit(element);
+    editor.setTheme("ace/theme/twilight");
+    editor.session.setMode("ace/mode/c_cpp");
+})
 
 
 $("#run").click(function(){

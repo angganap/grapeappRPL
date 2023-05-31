@@ -55,7 +55,7 @@
 					<span class="username">@<?= $username ?></span>
 					<div class="info">
 						<span class="info-item"><i class="bi bi-person-fill"></i>&nbsp;&nbsp; Level <?= $level ?></span>
-						<span class="info-item"><i class="bi bi-trophy-fill"></i>&nbsp;&nbsp; 1st</span>
+						<span class="info-item"><i class="bi bi-trophy-fill"></i>&nbsp;&nbsp; <?= $rank ?> Rank</span>
 						<span class="info-item"><i class="bi bi-diamond-fill"></i>&nbsp;&nbsp; <?= $coins ?> Coin(s)</span>
 						<span class="info-item"><i class="bi bi-award-fill"></i>&nbsp;&nbsp; 0 Badges</span>
 						<span class="info-item"><i class="bi bi-star-fill"></i>&nbsp;&nbsp; <?= $xp ?> XP</span>

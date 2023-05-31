@@ -23,4 +23,12 @@ class ProfileModel extends Model
         $isTest = $result[0]->is_test;
         return $isTest;
     }
+
+    public function getRankUser($id){
+        $builder = $this->db->table($this->table);
+        $query = $builder->select('*, (ROW_NUMBER() OVER(ORDER BY coin DESC, xp DESC)) AS position')->from($this->$table)->getWhere(['id' => $id]);
+        $result = $query->getResult();
+        $rank = $result[0]->position;
+        return $rank;
+    }
 }
