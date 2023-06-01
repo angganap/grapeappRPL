@@ -51,25 +51,26 @@
                             Manakah dari pernyataan berikut yang merupakan deklarasi variabel yang benar dalam bahasa C?
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan11" data-id='1' onclick="choose(this);">
                                 A. int x = 5;
                             </div>
-                            <div class="pilgan-box f-right">
-                                B. float y = "Hello
+                            <div class="pilgan-box f-right" id="pilgan12" data-id='2' onclick="choose(this);">
+                                B. float y = "Hello"
                             </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan13" data-id='3' onclick="choose(this);">
                                 C. boolean z = true;
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan14" data-id='4' onclick="choose(this);">
                                 D. string w = "Programming";
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi1" onclick='evaluasi(1,1);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next1" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
@@ -83,32 +84,33 @@
 
 int main() {
     int x = 10;
-    printf("%d\n", x);
-    printf("%d\n", x + 5);
+    printf("%d, ", x);
+    printf("%d", x + 5);
     return 0;
 }
 				            </pre>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan21" data-id='1' onclick="choose(this);">
                                 A. 10, 15
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan22" data-id='2' onclick="choose(this);">
                                 B. 15, 20
                             </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan23" data-id='3' onclick="choose(this);">
                                 C. 10, 10
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan24" data-id='4' onclick="choose(this);">
                                 D. 5, 10
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi2" onclick='evaluasi(2,1);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next2" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
@@ -131,25 +133,26 @@ int main() {
 				            </pre>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
-                                A. Number is greater than 5
+                            <div class="pilgan-box f-left" id="pilgan31" data-id='1' onclick="choose(this);">
+                                A. Number is greater than or equal to 5
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan32" data-id='2' onclick="choose(this);">
                                 B. Number is less than or equal to 5
                             </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
-                                C. Number is greater than or equal to 5
+                            <div class="pilgan-box f-left" id="pilgan33" data-id='3' onclick="choose(this);">
+                                C. Number is greater than 5
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan34" data-id='4' onclick="choose(this);">
                                 D. Number is less than 5
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi3" onclick='evaluasi(3,2);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next3" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item ">
                     <div class="soal">
@@ -164,28 +167,28 @@ int main() {
                             Bagaimana cara mengimplementasikan fungsi ini untuk mengembalikan hasil penjumlahan dari dua parameter yang diberikan?
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
-                                A. <pre>int calculateSum(int a, int b) {
+                            <div class="pilgan-box f-left" id="pilgan41" data-id='1' onclick="choose(this);">
+                                A. <<pre>int calculateSum(int a, int b) {
+    sum = a + b;
+    return sum;
+}
+</pre>
+                            </div>
+                            <div class="pilgan-box f-right" id="pilgan42" data-id='2' onclick="choose(this);">
+                                B. <pre>int calculateSum(int a, int b) {
     return a + b;
 }
 </pre>
                             </div>
-                            <div class="pilgan-box f-right">
-                                B. <pre>int calculateSum(int a, int b) {
-    sum = a + b;
-    return sum;
-}
-                            </pre>
-                            </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan43" data-id='3' onclick="choose(this);">
                                 C. <pre>calculateSum(int a, int b) {
     return a + b;
 }
 </pre>
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan44" data-id='4' onclick="choose(this);">
                                 D. <pre>int calculateSum(int a, int b) {
     printf("%d", a + b);
 }
@@ -195,7 +198,8 @@ int main() {
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi4" onclick='evaluasi(4,2);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next4" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
@@ -210,25 +214,26 @@ int main() {
                             Bagaimana cara mengakses nilai yang terdapat pada indeks ke-3 dari array tersebut?
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan51" data-id='1' onclick="choose(this);">
                                 A. numbers[2]
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan52" data-id='2' onclick="choose(this);">
                                 B. numbers[3]
                             </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan53" data-id='3' onclick="choose(this);">
                                 C. numbers[4]
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan54" data-id='4' onclick="choose(this);">
                                 D. numbers[5]
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi5" onclick='evaluasi(5,3);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next5" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
@@ -240,25 +245,26 @@ int main() {
                             Dalam bahasa C, apa yang akan terjadi jika menggunakan operator ++ pada variabel yang bernilai NULL?
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan61" data-id='1' onclick="choose(this);">
                                 A. Akan terjadi error saat kompilasi.
                             </div>
-                            <div class="pilgan-box f-right">
+                            <div class="pilgan-box f-right" id="pilgan62" data-id='2' onclick="choose(this);">
                                 B. Variabel akan tetap bernilai NULL.
                             </div>
                         </div>
                         <div class="wrap-pilgan">
-                            <div class="pilgan-box f-left">
+                            <div class="pilgan-box f-left" id="pilgan63" data-id='3' onclick="choose(this);">
                                 C. Variabel akan menjadi 0.
                             </div>
-                            <div class="pilgan-box f-right">
-                                D. Hasilnya tidak dapat diprediksi.
+                            <div class="pilgan-box f-right" id="pilgan64" data-id='4' onclick="choose(this);">
+                                D. Terjadi perilaku yang tidak terdefinisi (undefined behaviour).
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="evaluasi6" onclick='evaluasi(6,3);'>Evaluasi</button>
+                    <button type="button" class="btn btn-skip d-none" type="button" id="next6" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
@@ -281,16 +287,16 @@ int main() {
     return 0;
 }
 				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                            <button type="button" class="btn btn-run " onclick="evalCode('1 3 5 7 9 ',7,0,1,0)" id='run7'>Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
                             <p class="output-desc">1 3 5 7 9 </p>
-                            <div class="preview-code"></div>
+                            <div class="preview-code" id="preview7"></div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next7" data-bs-slide="next">SKIP</button>
                     <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
                     <div class="clear"></div> -->
@@ -319,55 +325,16 @@ int main() {
 }
 
 				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                            <button type="button" class="btn btn-run"  onclick="evalCode('Nilai rata-rata: 6.33',8,1,1,0)" id='run8'>Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
                             <p class="output-desc">Nilai rata-rata: 6.33</p>
-                            <div class="preview-code"></div>
+                            <div class="preview-code" id="preview8"></div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
-                    <!-- <button type="button" class="btn btn-skip"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
-                    <div class="clear"></div> -->
-                </div>
-                <div class="carousel-item">
-                    <div class="soal">
-                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
-                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
-                            button “Compile
-                            kode” untuk mengecek jawaban</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <pre class="editor">#include &lt;stdio.h&gt;
-
-int countCharacter(char str[], char c) {
-    /* Lengkapi kode di sini */
-    
-    /* Akhir kode */
-}
-
-int main() {
-    char str[] = "Hello, World!";
-    char character = 'o';
-    int count = countCharacter(str, character);
-    printf("Jumlah kemunculan karakter '%c': %d\n", character, count);
-    return 0;
-}
-				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
-                        </div>
-                        <div class="col-lg-4">
-                            <span class="output-title">Output:</span>
-                            <p class="output-desc">Jumlah kemunculan karakter o: 2</p>
-                            <div class="preview-code"></div>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next8"  data-bs-slide="next">SKIP</button>
                     <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
                     <div class="clear"></div> -->
@@ -383,34 +350,30 @@ int main() {
                         <div class="col-lg-8">
                             <pre class="editor">#include &lt;stdio.h&gt;
 #include &lt;string.h>&gt;
-
-int isPalindrome(char str[]) {
+int countCharacter(char str[], char c) {
     /* Lengkapi kode di sini */
     
     /* Akhir kode */
 }
 
 int main() {
-    char str[] = "madam";
-    int result = isPalindrome(str);
-    if (result == 1) {
-        printf("%s adalah palindrom\n", str);
-    } else {
-        printf("%s bukan palindrom\n", str);
-    }
+    char str[] = "Hello, World!";
+    char character = 'o';
+    int count = countCharacter(str, character);
+    printf("Jumlah kemunculan karakter %c: %d", character, count);
     return 0;
 }
 				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                            <button type="button" class="btn btn-run"  class="btn btn-run"  onclick="evalCode('Jumlah kemunculan karakter o: 2',9,2,2,0)" id='run9'>Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
-                            <p class="output-desc">madam adalah palindrom</p>
-                            <div class="preview-code"></div>
+                            <p class="output-desc">Jumlah kemunculan karakter o: 2</p>
+                            <div class="preview-code" id="preview9"></div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next9"  data-bs-slide="next">SKIP</button>
                     <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
                     <div class="clear"></div> -->
@@ -425,7 +388,50 @@ int main() {
                     <div class="row">
                         <div class="col-lg-8">
                             <pre class="editor">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
 
+int isPalindrome(char str[]) {
+    /* Lengkapi kode di sini */
+    
+    /* Akhir kode */
+}
+
+int main() {
+    char str[] = "madam";
+    int result = isPalindrome(str);
+    if (result == 1) {
+        printf("%s adalah palindrom", str);
+    } else {
+        printf("%s bukan palindrom", str);
+    }
+    return 0;
+}
+				            </pre>
+                            <button type="button" class="btn btn-run" onclick="evalCode('madam adalah palindrom',10,3,2,0)" id='run10'>Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">madam adalah palindrom</p>
+                            <div class="preview-code" id="preview10"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-skip" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next10" data-bs-slide="next">SKIP</button>
+                    <!-- <button type="button" class="btn btn-skip"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
+                    <div class="clear"></div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="soal">
+                        <span>Sebelum memulai pelajaran, Yuk cek dulu pengetahuan awalmu </span>
+                        <p>Isi kodingan rumpang berikut sampai menghasilkan output yang diinginkan! Kamu bisa klik
+                            button “Compile
+                            kode” untuk mengecek jawaban</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
 int countWords(char str[]) {
     /* Lengkapi kode di sini */
     
@@ -435,20 +441,20 @@ int countWords(char str[]) {
 int main() {
     char str[] = "Ini adalah contoh kalimat";
     int wordCount = countWords(str);
-    printf("Jumlah kata: %d\n", wordCount);
+    printf("Jumlah kata: %d", wordCount);
     return 0;
 }
 				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                            <button type="button" class="btn btn-run" onclick="evalCode('Jumlah kata: 4',11,4,3,0)" id='run11'>Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
                             <p class="output-desc">Jumlah kata: 4</p>
-                            <div class="preview-code"></div>
+                            <div class="preview-code" id="preview11"></div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next11" data-bs-slide="next">SKIP</button>
                     <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
                     <div class="clear"></div> -->
@@ -484,38 +490,38 @@ int main() {
 }
 
 				            </pre>
-                            <button type="button" class="btn btn-run" id="run">Jalankan Kode</button>
+                            <button type="button" class="btn btn-run" onclick="evalCode('Bilangan Prima antara 1 dan 10: 2 3 5 7 ',12,5,3,1)" id='run12'>Jalankan Kode</button>
                         </div>
                         <div class="col-lg-4">
                             <span class="output-title">Output:</span>
-                            <p class="output-desc">Bilangan Prima antara 1 dan 10: 2 3 5 7 </p>
-                            <div class="preview-code"></div>
+                            <p class="output-desc">Bilangan Prima antara 1 dan 10: 2 3 5 7&nbsp;</p>
+                            <div class="preview-code" id="preview12"></div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-skip" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">NEXT</button>
+                        data-bs-target="#carouselExampleControlsNoTouching" id="next12" onclick='result(this);' data-bs-slide="next" data-id="<?php echo $id; ?>">RESULT</button>
                     <!-- <button type="button" class="btn btn-skip"
                         data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" data-id="<?php echo $id; ?>" onclick="result(this);">RESULT</button>
                     <div class="clear"></div> -->
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
-                        <p>Berdasarkan tes awal, <span id="username">@antonioH</span> ada di level <span id="result">PEMULA</span></p>
+                        <p>Berdasarkan tes awal, <span id="username">@antonioH</span> ada di level <span id="result"></span></p>
                         <p>Hasil Tes Awalmu:</p>
                     </div>
                     <div class="wrap-hasil">
                         <div class="result">
-                            Tes Dasar<span style="float:right;">1/5</span>
+                            Tes Dasar<span style="float:right;"><span id="dasar"></span>/4</span>
                         </div>
                     </div>
                     <div class="wrap-hasil">
                         <div class="result">
-                            Tes Menengah<span style="float:right;">1/5</span>
+                            Tes Menengah<span style="float:right;"><span id='menengah'></span>/4</span>
                         </div>
                     </div>
                     <div class="wrap-hasil">
                         <div class="result">
-                            Tes Mahir<span style="float:right;">1/5</span>
+                            Tes Mahir<span style="float:right;"><span id="mahir"></span>/4</span>
                         </div>
                     </div>
                     <center><a class="btn btn-home" href="<?= base_url('home') ?>">HOME</a></center>

@@ -27,9 +27,33 @@ class Test extends BaseController
     public function done(){
         $testModel = new TestModel;
         $id = $this->request->getPost('id');
-        $done = $testModel->done($id);
-        if($done){
-            echo json_encode(array("statusCode"=>200));
+        $beginner = $this->request->getPost('beginner');
+        $inter = $this->request->getPost('inter');
+        $advanced = $this->request->getPost('advanced');
+        $descUser = $this->request->getPost('descUser');
+        $levelUser = $this->request->getPost('levelUser');
+        $data = [
+            'id_user' => $id,
+            'beginner' => $beginner,
+            'intermediate' => $inter,
+            'advanced' => $advanced,
+            'level_user' => $levelUser,
+            'desc_user' => $descUser,
+        ];
+        if($levelUser==1){
+            $level = 1;
+        }else if($levelUser==2){
+            $level = 3;
+        }else{
+            $level = 5;
         }
+        $save = $testModel->saveTest($data);
+        if($save){
+            $done = $testModel->done($id,$level);
+            if($done){
+                echo json_encode(array("statusCode"=>200));
+            }
+        }
+        
     }
 }

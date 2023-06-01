@@ -195,3 +195,20 @@ body{
     color: #fff;
     text-align: left;
 }
+
+.correct{
+	background-color: #00f46e;
+	color: #fff;
+}
+
+.wrong{
+	background-color: #f50101;
+	color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+.d-inline-block{
+    display: inline-block;
+}

@@ -16,14 +16,20 @@ class TestModel extends Model
         $isTest = $result[0]->is_test;
         return $isTest;
     }
-    public function done($id){
+    public function done($id,$level){
         $data =[
             'id' => $id,
-            'is_test' => 1
+            'is_test' => 1,
+            'level' => $level
         ];
         $builder = $this->db->table($this->table);
         $builder->set('is_test', 1);
+        $builder->set('level', $level);
         $builder->where('id', $id);
         return $builder->update();
+    }
+    public function saveTest($data){
+        $builder = $this->db->table('tb_test_awal');
+        return $builder->insert($data);
     }
 }
