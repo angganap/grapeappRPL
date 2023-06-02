@@ -20,7 +20,8 @@ class Home extends BaseController
                 $data = [
                     'name' => $user[0]->name,
                     'username' => $user[0]->username,
-                    'ranks' => $ranks
+                    'ranks' => $ranks,
+                    'level' => $user[0]->level,
                 ];
                 return view('user/home',$data);
             }else{
@@ -28,6 +29,20 @@ class Home extends BaseController
             }
         }else{
             return redirect()->to(base_url('login'));
+        }
+    }
+    public function getCurrCourse(){
+        $id= $this->request->getPost('id');
+        $level= $this->request->getPost('level');
+        $homeModel = new HomeModel;
+        $lvl = $homeModel->getCurrCourse($id,$level);
+        if($lvl==0){
+            $update = $homeModel->startCourse($id,$level);
+            if($update){
+                echo json_encode(array("statusCode"=>200, "lvlCurrCourse"=>1));
+            }
+        }else{
+            echo json_encode(array("statusCode"=>200, "lvlCurrCourse"=>$lvl));
         }
     }
 }

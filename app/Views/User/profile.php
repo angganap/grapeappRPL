@@ -73,10 +73,43 @@
 							<div class="card card-progress">
 								<h5 class="card-header">Course Progress</h5>
 								<div class="card-body">
-									<h6>Perkenalan Pemrograman</h6>
-									<div class="progress">
-										<div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Example with label" style="width: 35%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">35%</div>
-									</div>
+									<?php
+										if($courses!==NULL){
+											$courseName = ['Perkenalan Pemrograman','Pemrograman Terstruktur','Kendali Pemrograman'];
+											$maxCourse =[6,6,6];
+											$courses  = array_values((array) $courses);
+											for($i=2;$i<8;$i++){
+												if($courses[$i]!=0){
+													$percent = ceil(($courses[$i]/$maxCourse[$i-2]) *100);
+													echo '
+														<h6>'.$courseName[$i-2].'</h6>';
+													if($percent<=50){
+														echo '
+															<div class="progress">
+																<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
+															</div>
+															<br/>
+														';
+													}else if($percent>50 && $percent<80){
+														echo '
+															<div class="progress">
+																<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
+															</div>
+															<br/>
+														';
+													}else if($percent>80){
+														echo '
+															<div class="progress">
+																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
+															</div>
+															<br/>
+														';
+													}
+
+												}
+											}
+										}
+									?>
 								</div>
 							</div>
 							<div class="card card-progress">

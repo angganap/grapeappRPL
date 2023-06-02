@@ -1,3 +1,7 @@
+<?php
+    $session = session();
+    $id = $session->get('id');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,7 +71,7 @@
             <div class="col-lg-8 right-content">
                 <h2>Welcome to GRAPEPro</h2>
                 <h5>Pemula</h5>
-                <div class="box-class">
+                <div class="box-class" onclick="goToCourse(1,<?= $level ?>, <?= $id ?>);">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-2">
@@ -76,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-10 class-section">
-                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/1/1">Pengenalan Pemrograman</a></span><i class="bi bi-calendar-check icon-status"></i>
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Pengenalan Pemrograman</a></span><i class="bi bi-calendar-check icon-status"></i>
                                 <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                                 <div class="info-class">
                                     <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;1x Pengulangan</span>
@@ -85,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-class">
+                <div class="box-class" onclick="goToCourse(2,<?= $level ?>, <?= $id ?>);">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-2">
@@ -94,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-10 class-section">
-                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/2/1">Pemrograman Struktur</a></span><i class="bi bi-lock icon-status"></i>
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Pemrograman Struktur</a></span><?php if($level>=2){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
                                 <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                                 <div class="info-class">
                                     <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
@@ -104,7 +108,7 @@
                     </div>
                 </div>
                 <h5>Menengah</h5>
-                <div class="box-class">
+                <div class="box-class" onclick="goToCourse(3,<?= $level ?>, <?= $id ?>);">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-2">
@@ -113,7 +117,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-10 class-section">
-                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0" href="../course/3/1">Kendali Pemrograman</a></span><i class="bi bi-lock icon-status"></i>
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Kendali Pemrograman</a></span><?php if($level>=3){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
                                 <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
                                 <div class="info-class">
                                     <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
@@ -128,8 +132,21 @@
     <div class="footer">
         <span>&#169; Tim GRAPEPro 2023</span>
     </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">GRAPEPro</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toastBody">
+                
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/js/user/home.js"></script>
 </body>
 
 </html>

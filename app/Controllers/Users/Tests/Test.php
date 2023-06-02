@@ -47,7 +47,11 @@ class Test extends BaseController
         }else{
             $level = 5;
         }
+        $dataCurr = [
+            'id_user' => $id,
+        ];
         $save = $testModel->saveTest($data);
+        $saveCurr = $testModel->setCurrCourse($dataCurr);
         if($save){
             $done = $testModel->done($id,$level);
             if($done){

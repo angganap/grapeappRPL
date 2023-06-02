@@ -24,9 +24,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-current="page" href="<?= base_url('home'); ?>">HOME</a>
-                    <a class="nav-link" href="<?= base_url('profile'); ?>">PROFILE</a>
-                    <a class="btn btn-logout" href="<?= base_url('logout'); ?>">LOGOUT</a>
+                    <a class="nav-link" aria-current="page" href="../../home">HOME</a>
+                    <a class="nav-link" href="../../profile">PROFILE</a>
+                    <a class="btn btn-logout" href="#">LOGOUT</a>
                 </div>
             </div>
         </div>
@@ -74,31 +74,9 @@
             </div>
             <div class="col-lg-4">
                 <div class="right-content">
-                    <?php
-                        $percent = ceil(($curr/6)*100);
-                        if($percent<=50){
-                            echo '
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
-                                </div>
-                                
-                            ';
-                        }else if($percent>50 && $percent<80){
-                            echo '
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
-                                </div>
-                                
-                            ';
-                        }else if($percent>80){
-                            echo '
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
-                                </div>
-                                
-                            ';
-                        }
-                    ?>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped" style="width: 50%">50%</div>
+                    </div>
                     <div class="game-element"><i class="bi bi-diamond-fill"></i>&nbsp; 100
                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                     <div class="materi-title">Perkenalan Pemrograman</div>

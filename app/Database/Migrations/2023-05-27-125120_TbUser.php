@@ -59,4 +59,5 @@ class TbUser extends Migration
     {
         $this->forge->dropTable('tb_user');
     }
+    
 }

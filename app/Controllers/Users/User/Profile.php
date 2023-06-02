@@ -17,6 +17,7 @@ class Profile extends BaseController
             if($isTest==1){
                 $user = $profileModel->getUser($id);
                 $rank = $profileModel->getRankUser($id);
+                $courses = $profileModel->getCourses($id);
                 $data =[
                     'nama'=>$user[0]->name,
                     'username' => $user[0]->username,
@@ -24,7 +25,8 @@ class Profile extends BaseController
                     'coins' => $user[0]->coin,
                     'xp' => $user[0]->xp,
                     'username' => $user[0]->username,
-                    'rank' => $rank
+                    'rank' => $rank,
+                    'courses' => $courses,
                 ];
                 return view('user/profile',$data);
             }else{

@@ -31,4 +31,20 @@ class HomeModel extends Model
         $ranks = $query->getResult();
         return $ranks;
     }
+
+    public function getCurrCourse($id,$level){
+        $builder = $this->db->table('tb_curr_course');
+        $query = $builder->select($level)->where('id_user', $id)->get();
+        $res = $query->getRow();
+        $level = array_values((array) $res)[0];
+        return $level;
+    }
+
+    public function startCourse($id,$level){
+        $builder = $this->db->table('tb_curr_course');
+        $builder->set($level,1);
+        $builder->where('id_user', $id);
+        $update = $builder->update();
+        return $update;
+    }
 }

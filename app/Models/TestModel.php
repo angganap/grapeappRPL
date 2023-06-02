@@ -32,4 +32,8 @@ class TestModel extends Model
         $builder = $this->db->table('tb_test_awal');
         return $builder->insert($data);
     }
+    public function setCurrCourse($data){
+        $builder = $this->db->table('tb_curr_course');
+        return $builder->insert($data);
+    }
 }

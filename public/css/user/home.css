@@ -102,6 +102,10 @@ body{
     margin-top: 20px;
 }
 
+.box-class:hover{
+    cursor: pointer;
+}
+
 .level{
     width: 100px;
     height: 100px;

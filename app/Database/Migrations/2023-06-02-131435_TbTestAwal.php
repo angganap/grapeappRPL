@@ -8,6 +8,7 @@ class TbTestAwal extends Migration
 {
     public function up()
     {
+        $this->db->disableForeignKeyChecks();
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
@@ -40,9 +41,9 @@ class TbTestAwal extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('id_user', 'tb_user', 'id');
         $this->forge->createTable('tb_test_awal');
-        $this->forge->addForeignKey('tb_test_awal', 'id_user', 'tb_user', 'id', 'CASCADE', 'CASCADE');
-
+        $this->db->enableForeignKeyChecks();
     }
 
     public function down()

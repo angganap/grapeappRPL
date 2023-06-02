@@ -31,4 +31,12 @@ class ProfileModel extends Model
         $rank = $result[0]->position;
         return $rank;
     }
+
+    public function getCourses($id){
+        $where = "id_user='{$id}'";
+        $builder = $this->db->table('tb_curr_course');
+        $query = $builder->getWhere($where);
+        $result = $query->getRow();
+        return $result;
+    }
 }

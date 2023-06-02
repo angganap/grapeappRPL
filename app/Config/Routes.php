@@ -46,6 +46,7 @@ $routes->get('/cobahome', 'Users\CobaHome::index');
 $routes->post('/register/add','Users\Landings\Register::add');
 $routes->post('/login/logUser','Users\Landings\Login::logUser');
 $routes->post('/test/awal/result', 'Users\Tests\Test::done');
+$routes->post('/home/getCurrCourse', 'Users\User\Home::getCurrCourse');
 
 
 /*
