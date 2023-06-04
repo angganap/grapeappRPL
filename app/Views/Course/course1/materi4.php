@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GRAPEPro | Perkenalan Pemrograman</title>
+    <title>GRAPEPro | Operator dan Ekspresi </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/course/course.css">
@@ -42,46 +42,63 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="materi-wrapper">
-                    <h2>Pengantar Pemrograman C</h2>
-                    <center><img src="/images/c-logo.png" width="50%" height="auto"></center><br>
-                    <p>Selamat datang di dunia yang penuh dengan logika, algoritma, dan kreativitas tak terbatas! Jika Anda mencari bahasa pemrograman yang kuat, fleksibel, dan mampu membawa ide-ide Anda menjadi kenyataan, maka Pemrograman C adalah tempat yang tepat untuk memulai perjalanan Anda. Dalam artikel ini, kita akan menjelajahi dasar-dasar Pemrograman C dan mengapa belajar bahasa ini akan membuka pintu menuju dunia yang penuh dengan potensi tanpa batas.</p>
-                    <h3>Mengapa Pemrograman C Penting dalam Era Digital?</h3>
-                    <p>Di era digital yang terus berkembang, pemrograman telah menjadi salah satu keterampilan yang paling dicari. Kemampuan untuk membangun aplikasi, situs web, dan solusi perangkat lunak lainnya sangat berharga di pasar kerja yang kompetitif saat ini. Dan di balik banyak bahasa pemrograman yang ada, Pemrograman C masih memegang posisi yang kuat.</p>
-                    <p>Salah satu alasan utama mengapa Pemrograman C begitu penting adalah karena bahasa ini menjadi landasan bagi banyak bahasa pemrograman modern. Dalam hal ini, mempelajari Pemrograman C bukan hanya tentang menguasai satu bahasa, tetapi juga tentang membangun fondasi yang kokoh untuk memahami bahasa pemrograman lainnya. Bahasa pemrograman seperti C++, C#, dan Objective-C semuanya didasarkan pada C, sehingga pemahaman yang baik tentang C akan memberi Anda keuntungan besar saat mempelajari bahasa-bahasa tersebut.</p>
-                    <h3>Kelebihan Pemrograman C</h3>
+                    <h2>Operator dan Ekspresi </h2>
+                    <p>Operator dan ekspresi adalah komponen penting dalam bahasa pemrograman C. Mereka digunakan untuk
+                        melakukan operasi dan menghasilkan nilai dalam program. Dengan pemahaman yang baik tentang
+                        operator dan ekspresi, Anda dapat melakukan manipulasi data dan pengambilan keputusan secara
+                        efisien dalam bahasa C.</p>
+
+                    <h3>Operator Aritmatika</h3>
+                    <p>Operator aritmatika digunakan untuk melakukan operasi matematika pada operand-operand numerik.
+                        Berikut adalah beberapa operator aritmatika dalam C:</p>
                     <ul>
-                        <li>Sederhana dan efisien: C memiliki sintaksis yang relatif sederhana, sehingga mudah
-                            dipelajari. Selain itu, C juga memiliki performa yang tinggi dan efisien.</li>
-                        <li>Portabilitas: Program yang ditulis dalam bahasa C dapat dijalankan di berbagai platform dan
-                            sistem operasi yang mendukung kompiler C.</li>
-                        <li>Pemrograman tingkat rendah: C memungkinkan pemrogram untuk mengakses dan mengontrol secara
-                            langsung perangkat keras komputer, sehingga cocok untuk pengembangan sistem operasi dan
-                            perangkat embedded.</li>
-                        <li>Populer dan banyak dukungan: C merupakan salah satu bahasa pemrograman yang paling banyak
-                            digunakan, sehingga tersedia banyak sumber daya dan dukungan komunitas yang bisa
-                            dimanfaatkan.</li>
+                        <li>+: Penjumlahan</li>
+                        <li>-: Pengurangan</li>
+                        <li>*: Perkalian</li>
+                        <li>/: Pembagian</li>
+                        <li>%: Modulus (Sisa pembagian)</li>
                     </ul>
 
-                    <h3>Contoh Program Sederhana</h3>
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <h3>Operator Relasional</h3>
+                    <p>Operator relasional digunakan untuk membandingkan nilai antara operand-operand. Berikut adalah
+                        beberapa operator relasional dalam C:</p>
+                    <ul>
+                        <li>==: Sama dengan</li>
+                        <li>!=: Tidak sama dengan</li>
+                        <li>&gt;: Lebih besar dari</li>
+                        <li>&lt;: Lebih kecil dari</li>
+                        <li>&gt;=: Lebih besar dari atau sama dengan</li>
+                        <li>&lt;=: Lebih kecil dari atau sama dengan</li>
+                    </ul>
 
-int main() {
-  printf("Hello, World!\n");
-  return 0;
-}
-</code></pre>
-                    <p>Pada contoh di atas, kita menggunakan fungsi <code>printf()</code> untuk menampilkan pesan
-                        "Hello, World!" ke layar. Ini adalah program sederhana yang sering digunakan sebagai langkah
-                        awal dalam mempelajari bahasa pemrograman baru.</p>
+                    <h3>Operator Logika</h3>
+                    <p>Operator logika digunakan untuk melakukan operasi logika pada operand-operand boolean. Berikut
+                        adalah beberapa operator logika dalam C:</p>
+                    <ul>
+                        <li>&amp;&amp;: AND (Keduanya harus benar)</li>
+                        <li>||: OR (Salah satu harus benar)</li>
+                        <li>!: NOT (Membalik nilai boolean)</li>
+                    </ul>
 
-                    <h3>Memulai Perjalanan Anda</h3>
-                    <p>Jika Anda tertarik mempelajari Pemrograman C, Anda memiliki banyak opsi untuk memulainya. Ada berbagai buku, tutorial, dan sumber daya online yang tersedia secara gratis atau berbayar. Anda juga dapat mengikuti kursus online atau menghadiri kelas offline jika Anda lebih suka belajar secara langsung dari instruktur.</p>
-                    <p>Saat Anda mulai mempelajari Pemrograman C, penting untuk memahami konsep dasar seperti variabel, tipe data, operasi matematika, dan pengendalian aliran program. Praktek adalah kunci untuk memperkuat pemahaman Anda, jadi jangan takut untuk mencoba menulis kode dan memecahkan masalah kecil menggunakan bahasa C.</p>
-                    <p>Ingatlah bahwa perjalanan dalam pemrograman adalah proses yang berkelanjutan. Teruslah belajar, eksperimen, dan berkolaborasi dengan sesama pengembang. Jangan takut untuk menghadapi tantangan baru dan menjelajahi ide-ide kreatif Anda.</p>
-                    <p>Dengan Pemrograman C, pintu dunia pemrograman akan terbuka lebar bagi Anda. Jadilah penjelajah yang pemberani, siap untuk menghadapi tantangan dan menciptakan karya yang menginspirasi. Selamat menapaki dunia pemrograman!</p>
-                    <p>Selamat memulai perjalanan Anda dalam mempelajari pemrograman C!</p>
+                    <h3>Ekspresi</h3>
+                    <p>Ekspresi terdiri dari kombinasi operator, operand, dan konstanta yang menghasilkan nilai
+                        tertentu. Contoh ekspresi dalam bahasa C:</p>
+                    <pre>
+    <code>
+      int a = 5;
+      int b = 10;
+      int c = a + b;
+    </code>
+  </pre>
+                    <p>Pada contoh di atas, kita menggunakan operator aritmatika '+' untuk menjumlahkan nilai variabel
+                        'a' dan 'b', dan kemudian hasilnya disimpan dalam variabel 'c'.</p>
 
-                    <button class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,1,"Pengantar Pemrograman C");'>Selanjutnya</button>
+                    <h3>Kesimpulan</h3>
+                    <p>Operator dan ekspresi adalah elemen penting dalam bahasa pemrograman C. Dengan menggunakan
+                        operator yang sesuai dan membangun ekspresi yang tepat, Anda dapat melakukan operasi matematika,
+                        perbandingan, dan pengambilan keputusan dengan efektif dalam program C.</p>
+                    <a class="btn btn-next f-left" href="<?= base_url('course/'.$id.'/1/3'); ?>">Sebelumnya</a>
+                    <a class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,4,"Operator dan Ekspresi");'>Selanjutnya</a>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -117,7 +134,7 @@ int main() {
                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; <?= $xp ?> XP</div>
                     <div class="materi-title">Perkenalan Pemrograman</div>
                     <div class="materi-nav">
-                        <div class="list-materi current">
+                        <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/1'); ?>">Pengantar Pemrograman C </a>
@@ -125,19 +142,21 @@ int main() {
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                    <div class="status <?php if($curr>1) echo 'check';  ?>"><?php if($curr>1) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>1) echo 'check';  ?>">
+                                        <?php if($curr>1) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
-                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C</a>
-                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0 
+                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C </a>
+                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                     <div class="status <?php if($curr>2) echo 'check';  ?>"><?php if($curr>2) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>2) echo 'check';  ?>">
+                                        <?php if($curr>2) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
@@ -150,11 +169,11 @@ int main() {
                                 </div>
                                 <div class="col-lg-2 col-right">
                                     <div class="status <?php if($curr>3) echo 'check';  ?>">
-                                            <?php if($curr>3) echo '&check;';  ?></div>
+                                        <?php if($curr>3) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="list-materi">
+                        <div class="list-materi current">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/4'); ?>">Operator dan Ekspresi </a>
@@ -196,4 +215,5 @@ int main() {
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="/js/courses/course.js"></script>
+
 </html>

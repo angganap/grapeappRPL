@@ -30,7 +30,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/landing', 'Users\Landings\Landing::index');
+$routes->get('/grapepro', 'Users\Landings\Landing::index');
 $routes->get('/register', 'Users\Landings\Register::index');
 $routes->get('/login', 'Users\Landings\Login::index');
 $routes->get('/login/loginWithGoogle', 'Users\Landings\Login::loginWithGoogle');
@@ -47,6 +47,9 @@ $routes->post('/register/add','Users\Landings\Register::add');
 $routes->post('/login/logUser','Users\Landings\Login::logUser');
 $routes->post('/test/awal/result', 'Users\Tests\Test::done');
 $routes->post('/home/getCurrCourse', 'Users\User\Home::getCurrCourse');
+$routes->post('/course/next', 'Users\Course\Course::nextCourse');
+$routes->post('/course/challenge', 'Users\Course\Course::challenge');
+$routes->post('/course/getBadges', 'Users\Course\Course::getBadges');
 
 
 /*

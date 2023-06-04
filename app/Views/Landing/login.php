@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/images/for_login.png" alt="">
+                    <center><img src="/images/for_login.png" width="80%" height="auto"></center>
                 </div>
 
                 <div class="col-md-6">
@@ -53,9 +53,11 @@
                                     <input class="form-control" type="password" id="password">
                                 </div>
 
-                                <center><input class="btn btn-regis" type="submit" value="LOGIN"></center>
+                                <center><input class="btn btn-regis mb-2" type="submit" value="LOGIN"></center>
                                 <h6 style="text-align:center">atau</h6>
-                                <center><a class="btn btn-google" href="login/loginWithGoogle">Login dengan google</a></center>
+                                <center><a class="btn btn-google" href="login/loginWithGoogle"><i class="bi bi-google"></i>&nbsp;&nbsp;&nbsp;Login dengan google</a></center>
+                                <br>
+                                <center><b>Belum punya akun? </b><a href="<?= base_url('register') ?>">Daftar</a></center>
                             </div>
                         </form>
                     </div>

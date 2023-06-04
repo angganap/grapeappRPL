@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GRAPEPro | Perkenalan Pemrograman</title>
+    <title>GRAPEPro | Challenge: Studi Kasus </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/course/course.css">
@@ -42,46 +42,102 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="materi-wrapper">
-                    <h2>Pengantar Pemrograman C</h2>
-                    <center><img src="/images/c-logo.png" width="50%" height="auto"></center><br>
-                    <p>Selamat datang di dunia yang penuh dengan logika, algoritma, dan kreativitas tak terbatas! Jika Anda mencari bahasa pemrograman yang kuat, fleksibel, dan mampu membawa ide-ide Anda menjadi kenyataan, maka Pemrograman C adalah tempat yang tepat untuk memulai perjalanan Anda. Dalam artikel ini, kita akan menjelajahi dasar-dasar Pemrograman C dan mengapa belajar bahasa ini akan membuka pintu menuju dunia yang penuh dengan potensi tanpa batas.</p>
-                    <h3>Mengapa Pemrograman C Penting dalam Era Digital?</h3>
-                    <p>Di era digital yang terus berkembang, pemrograman telah menjadi salah satu keterampilan yang paling dicari. Kemampuan untuk membangun aplikasi, situs web, dan solusi perangkat lunak lainnya sangat berharga di pasar kerja yang kompetitif saat ini. Dan di balik banyak bahasa pemrograman yang ada, Pemrograman C masih memegang posisi yang kuat.</p>
-                    <p>Salah satu alasan utama mengapa Pemrograman C begitu penting adalah karena bahasa ini menjadi landasan bagi banyak bahasa pemrograman modern. Dalam hal ini, mempelajari Pemrograman C bukan hanya tentang menguasai satu bahasa, tetapi juga tentang membangun fondasi yang kokoh untuk memahami bahasa pemrograman lainnya. Bahasa pemrograman seperti C++, C#, dan Objective-C semuanya didasarkan pada C, sehingga pemahaman yang baik tentang C akan memberi Anda keuntungan besar saat mempelajari bahasa-bahasa tersebut.</p>
-                    <h3>Kelebihan Pemrograman C</h3>
-                    <ul>
-                        <li>Sederhana dan efisien: C memiliki sintaksis yang relatif sederhana, sehingga mudah
-                            dipelajari. Selain itu, C juga memiliki performa yang tinggi dan efisien.</li>
-                        <li>Portabilitas: Program yang ditulis dalam bahasa C dapat dijalankan di berbagai platform dan
-                            sistem operasi yang mendukung kompiler C.</li>
-                        <li>Pemrograman tingkat rendah: C memungkinkan pemrogram untuk mengakses dan mengontrol secara
-                            langsung perangkat keras komputer, sehingga cocok untuk pengembangan sistem operasi dan
-                            perangkat embedded.</li>
-                        <li>Populer dan banyak dukungan: C merupakan salah satu bahasa pemrograman yang paling banyak
-                            digunakan, sehingga tersedia banyak sumber daya dan dukungan komunitas yang bisa
-                            dimanfaatkan.</li>
-                    </ul>
-
-                    <h3>Contoh Program Sederhana</h3>
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <h2>Challenge: Studi Kasus </h2>
+                    <br>
+                    <h5>1. Menampilkan Nama (5 coins)</h5>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <pre class="editor">#include &lt;stdio.h&gt;
 
 int main() {
-  printf("Hello, World!\n");
-  return 0;
+
+    // Deklarasikan variabel "nama" dengan tipe data array of char dan beri nilai "John"
+    char nama[] = "";
+
+    // Tampilkan nilai variabel "nama" menggunakan printf
+    printf("Nama: %s",);
+
+    return 0;
 }
-</code></pre>
-                    <p>Pada contoh di atas, kita menggunakan fungsi <code>printf()</code> untuk menampilkan pesan
-                        "Hello, World!" ke layar. Ini adalah program sederhana yang sering digunakan sebagai langkah
-                        awal dalam mempelajari bahasa pemrograman baru.</p>
 
-                    <h3>Memulai Perjalanan Anda</h3>
-                    <p>Jika Anda tertarik mempelajari Pemrograman C, Anda memiliki banyak opsi untuk memulainya. Ada berbagai buku, tutorial, dan sumber daya online yang tersedia secara gratis atau berbayar. Anda juga dapat mengikuti kursus online atau menghadiri kelas offline jika Anda lebih suka belajar secara langsung dari instruktur.</p>
-                    <p>Saat Anda mulai mempelajari Pemrograman C, penting untuk memahami konsep dasar seperti variabel, tipe data, operasi matematika, dan pengendalian aliran program. Praktek adalah kunci untuk memperkuat pemahaman Anda, jadi jangan takut untuk mencoba menulis kode dan memecahkan masalah kecil menggunakan bahasa C.</p>
-                    <p>Ingatlah bahwa perjalanan dalam pemrograman adalah proses yang berkelanjutan. Teruslah belajar, eksperimen, dan berkolaborasi dengan sesama pengembang. Jangan takut untuk menghadapi tantangan baru dan menjelajahi ide-ide kreatif Anda.</p>
-                    <p>Dengan Pemrograman C, pintu dunia pemrograman akan terbuka lebar bagi Anda. Jadilah penjelajah yang pemberani, siap untuk menghadapi tantangan dan menciptakan karya yang menginspirasi. Selamat menapaki dunia pemrograman!</p>
-                    <p>Selamat memulai perjalanan Anda dalam mempelajari pemrograman C!</p>
+				            </pre>
+                            <button type="button" class="btn btn-run"
+                                onclick="evalCode('Nama: John',0,5,<?= $id ?>,'Menampilkan Nama',3)" id='run0'>Jalankan
+                                Kode</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Nama: John</p>
+                            <div class="preview-code" id="preview0"></div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <h5>2. Menampilkan Hasil Penjumlahan (10 coins)</h5>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+int main() {
+    // Deklarasikan variabel "a" dengan tipe data integer dan beri nilai 5
+    a = 5;
 
-                    <button class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,1,"Pengantar Pemrograman C");'>Selanjutnya</button>
+    // Deklarasikan variabel "b" dengan tipe data integer dan beri nilai 3
+
+    // Hitung hasil penjumlahan dari variabel "a" dan "b" dan simpan dalam variabel "c"
+    int c = a  b;
+
+    // Tampilkan hasil penjumlahan menggunakan printf
+    printf("Hasil penjumlahan: %d",);
+
+    return 0;
+}
+
+				            </pre>
+                            <button type="button" class="btn btn-run"
+                                onclick="evalCode('Hasil penjumlahan: 8',1,10,<?= $id ?>,'Menampilkan Hasil Penjumlahan',3)"
+                                id='run1'>Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Hasil penjumlahan: 8</p>
+                            <div class="preview-code" id="preview1"></div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <h5>3. Menampilkan Luas Persegi Panjang (10 coins)</h5>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <pre class="editor">#include &lt;stdio.h&gt;
+int main() {
+    // Deklarasikan variabel "panjang" dengan tipe data integer dan beri nilai 10
+
+    // Deklarasikan variabel "lebar" dengan tipe data float dan beri nilai 4.5
+
+    // Hitung luas dari persegi panjang dan simpan dalam variabel "luas"
+
+    // Tampilkan nilai variabel "luas" menggunakan printf
+    printf("Luas persegi panjang: %.2f", luas);
+
+    return 0;
+}
+
+				            </pre>
+                            <button type="button" class="btn btn-run"
+                                onclick="evalCode('Luas persegi panjang: 45.00',2,10,<?= $id ?>,'Menampilkan Luas Persegi Panjang',3)"
+                                id='run2'>Jalankan Kode</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="output-title">Output:</span>
+                            <p class="output-desc">Luas persegi panjang: 45.00</p>
+                            <div class="preview-code" id="preview2"></div>
+                        </div>
+                    </div>
+                    
+                    <a class="btn btn-next f-left" href="<?= base_url('course/'.$id.'/1/4'); ?>">Sebelumnya</a>
+                    <?php
+                        if($curr<6){
+                    ?>
+                    <a class="btn btn-next" id="next" onclick='next(<?= $id ?>,1, <?= $curr ?>,5,"Challenge: Studi Kasus");'>Selesai</a>
+                    <?php } ?>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -113,11 +169,12 @@ int main() {
                             ';
                         }
                     ?>
-                    <div class="game-element"><i class="bi bi-diamond-fill"></i>&nbsp; <?= $coins ?>
+                    <div class="game-element"><i class="bi bi-diamond-fill"></i>&nbsp; <span
+                            id='coin'><?= $coins ?></span>
                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; <?= $xp ?> XP</div>
                     <div class="materi-title">Perkenalan Pemrograman</div>
                     <div class="materi-nav">
-                        <div class="list-materi current">
+                        <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/1'); ?>">Pengantar Pemrograman C </a>
@@ -125,19 +182,21 @@ int main() {
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                    <div class="status <?php if($curr>1) echo 'check';  ?>"><?php if($curr>1) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>1) echo 'check';  ?>">
+                                        <?php if($curr>1) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
-                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C</a>
-                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0 
+                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C </a>
+                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                     <div class="status <?php if($curr>2) echo 'check';  ?>"><?php if($curr>2) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>2) echo 'check';  ?>">
+                                        <?php if($curr>2) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +209,7 @@ int main() {
                                 </div>
                                 <div class="col-lg-2 col-right">
                                     <div class="status <?php if($curr>3) echo 'check';  ?>">
-                                            <?php if($curr>3) echo '&check;';  ?></div>
+                                        <?php if($curr>3) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +226,7 @@ int main() {
                                 </div>
                             </div>
                         </div>
-                        <div class="list-materi">
+                        <div class="list-materi current">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/5'); ?>">Challenge: Studi Kasus </a>
@@ -185,6 +244,48 @@ int main() {
             </div>
         </div>
     </div>
+
+    <div class="modal"  id="getBadges" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dapat Badges</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center><img src="/images/badges/pemula-bahasa-c.png" width="50%" height="auto" alt=""></center>
+                    <br><center><h5>Selamat anda mendapatkan lencana Pemula Bahasa C</h5></center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="levelUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-bg-custom">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Naik Level <i class="bi bi-capslock-fill"></i>
+                    </h1>
+                    <button type="button" class="btn-close btn-close-levelUp" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body body-levelUp">
+                    <center><img width="55%" height="auto" src="/images/level-up.gif" /></center>
+                    <center>
+                        <h4 class="levelUp-desc">Selamat anda naik level!</h4>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary main-bg-color" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tsparticles"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
@@ -195,5 +296,15 @@ int main() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.2/ace.js"
+    integrity="sha512-NSbvq6xPdfFIa2wwSh8vtsPL7AyYAYRAUWRDCqFH34kYIjQ4M7H2POiULf3CH11TRcq3Ww6FZDdLZ8msYhMxjg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.9.3/tsparticles.min.js"
+    integrity="sha512-+YPbXItNhUCZR3fn5KeWPtJrXuoqRYQ4Gd1rIjEFG+h8UJYekebhOMh84vv7q+Y1sy5kdIIVtfftehCiigriMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-confetti@2/tsparticles.preset.confetti.bundle.min.js">
+</script>
 <script type="text/javascript" src="/js/courses/course.js"></script>
+<script type="text/javascript" src="/js/courses/quiz.js"></script>
+
 </html>

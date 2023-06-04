@@ -18,6 +18,9 @@ class Profile extends BaseController
                 $user = $profileModel->getUser($id);
                 $rank = $profileModel->getRankUser($id);
                 $courses = $profileModel->getCourses($id);
+                $histories = $profileModel->getHistories($id);
+                $badges = $profileModel->getJmlBadges($id);
+                $arrBadges = $profileModel->getBadges($id);
                 $data =[
                     'nama'=>$user[0]->name,
                     'username' => $user[0]->username,
@@ -27,6 +30,9 @@ class Profile extends BaseController
                     'username' => $user[0]->username,
                     'rank' => $rank,
                     'courses' => $courses,
+                    'histories' => $histories,
+                    'jml_badges' => $badges,
+                    'badges' => $arrBadges,
                 ];
                 return view('user/profile',$data);
             }else{

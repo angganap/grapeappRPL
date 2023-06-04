@@ -128,3 +128,46 @@ body{
     border: 2px solid #49fc7e;
     color: #49fc7e;
 }
+.f-left{
+    float: left;
+}
+
+.btn-next{
+    margin-top: 10px;
+}
+
+.editor {
+	position: relative !important;
+	border: 1px solid lightgray;
+	margin: 20px auto;
+	height: 300px;
+	width: 100%;
+}
+
+.btn-run{
+    background-color: #BE6FFB !important;
+    color: #fff !important;
+    padding: 5px 20px !important;
+}
+
+.output-title{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.output-desc{
+    background-color: #CCA4FF;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.preview-code{
+	background-color: #141414;
+	border: 1px solid lightgray;
+	margin: 10px auto;
+	height: 235px;
+	width: 100%;
+	padding: 12px;
+	color: #fff;
+	font-size: 14px;
+}

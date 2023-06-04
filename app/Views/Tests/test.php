@@ -506,7 +506,7 @@ int main() {
                 </div>
                 <div class="carousel-item">
                     <div class="soal">
-                        <p>Berdasarkan tes awal, <span id="username">@antonioH</span> ada di level <span id="result"></span></p>
+                        <p>Berdasarkan tes awal, <span id="username"><?php $session = session(); echo "@".$session->get('username') ?></span> ada di level <span id="result"></span></p>
                         <p>Hasil Tes Awalmu:</p>
                     </div>
                     <div class="wrap-hasil">

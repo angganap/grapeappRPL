@@ -60,8 +60,8 @@
                                         <input class="form-control" type="password" name="password" id="password" required>
                                     </div>
                                     <input class="btn btn-regis center" type="submit" value="REGISTER" id="register">
-                                    <h6 class="center" style="margin-top: 10px">atau</h6>
-                                    <input class="btn btn-google center" type="submit" value="Login dengan google">
+                                    <br>
+                                    <center><b>Sudah punya akun? </b><a href="<?= base_url('login') ?>">Login</a></center>
                                 </div>
                         </form>
                     </div>

@@ -57,7 +57,7 @@
 						<span class="info-item"><i class="bi bi-person-fill"></i>&nbsp;&nbsp; Level <?= $level ?></span>
 						<span class="info-item"><i class="bi bi-trophy-fill"></i>&nbsp;&nbsp; <?= $rank ?> Rank</span>
 						<span class="info-item"><i class="bi bi-diamond-fill"></i>&nbsp;&nbsp; <?= $coins ?> Coin(s)</span>
-						<span class="info-item"><i class="bi bi-award-fill"></i>&nbsp;&nbsp; 0 Badges</span>
+						<span class="info-item"><i class="bi bi-award-fill"></i>&nbsp;&nbsp; <?= $jml_badges ?> Badges</span>
 						<span class="info-item"><i class="bi bi-star-fill"></i>&nbsp;&nbsp; <?= $xp ?> XP</span>
 					</div>
 				</div>
@@ -76,28 +76,29 @@
 									<?php
 										if($courses!==NULL){
 											$courseName = ['Perkenalan Pemrograman','Pemrograman Terstruktur','Kendali Pemrograman'];
-											$maxCourse =[6,6,6];
+											$maxCourse =[5,6,6];
 											$courses  = array_values((array) $courses);
 											for($i=2;$i<8;$i++){
 												if($courses[$i]!=0){
-													$percent = ceil(($courses[$i]/$maxCourse[$i-2]) *100);
+													$each = ceil((1/$maxCourse[$i-2])*100);
+													$percent = ceil(($courses[$i]/$maxCourse[$i-2]) *100)-$each;
 													echo '
 														<h6>'.$courseName[$i-2].'</h6>';
-													if($percent<=50){
+													if($percent<50){
 														echo '
 															<div class="progress">
 																<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
 															</div>
 															<br/>
 														';
-													}else if($percent>50 && $percent<80){
+													}else if($percent>=50 && $percent<80){
 														echo '
 															<div class="progress">
 																<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
 															</div>
 															<br/>
 														';
-													}else if($percent>80){
+													}else if($percent>=80){
 														echo '
 															<div class="progress">
 																<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Example with label" style="width: '.$percent.'%; aria-valuenow= 35" aria-valuemin="0" aria-valuemax="100">'.$percent.'%</div>
@@ -115,7 +116,32 @@
 							<div class="card card-progress">
 								<h5 class="card-header">Activity Histories</h5>
 								<div class="card-body">
-									<div class="row-custom">
+									<?php
+										$length = count($histories);
+										for($i=0;$i<$length;$i++){
+											if($histories[$i]->type==1){
+												echo '
+												<div class="row-custom">
+													<div class="coloumn-1"><i class="bi bi-star-fill"></i>&nbsp; +'.$histories[$i]->earns.' XP</div>
+													<div class="coloumn-2">'.$histories[$i]->description.'</div>
+												</div>';
+											}else if($histories[$i]->type==2){
+												echo '
+												<div class="row-custom">
+													<div class="coloumn-1"><i class="bi bi-diamond-fill"></i>&nbsp; +'.$histories[$i]->earns.' Coins</div>
+													<div class="coloumn-2">'.$histories[$i]->description.'</div>
+												</div>';
+											}else if($histories[$i]->type==3){
+												echo '
+												<div class="row-custom">
+													<div class="coloumn-1"><i class="bi bi-award-fill"></i></i>&nbsp; New Badges
+													</div>
+													<div class="coloumn-2">'.$histories[$i]->description.'</div>
+												</div>';
+											}
+										}
+									?>
+									<!-- <div class="row-custom">
 										<div class="coloumn-1"><i class="bi bi-arrow-up-circle-fill"></i>&nbsp; Level Up
 										</div>
 										<div class="coloumn-2">Level up to Level 3 and have become an Explorer</div>
@@ -128,26 +154,34 @@
 										<div class="coloumn-1"><i class="bi bi-award-fill"></i></i>&nbsp; New Badges
 										</div>
 										<div class="coloumn-2">You have earned Digital Badge System</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-badges" role="tabpanel" aria-labelledby="nav-badges-tab" tabindex="0">
-							<div class="card card-badges" style="width: 18 rem ">
-								<img src="/images/badges.png" class="card-img-top" alt="...">
-								<div class="card-body">
-									<center>
-										<h5 class="card-title">Digital Badge System</h5>
-									</center>
-									<center>
-										<p class="card-text">COMPLETION BADGES</p>
-									</center><br />
-									<center>
-										<p class="card-text">Earned: 14 Feb, 2022 02:30:00</p>
-									</center>
-								</div>
-							</div>
-							<div class="card card-badges" style="width: 18rem;">
+							<?php
+								if($jml_badges>0){
+									for($i=0;$i<$jml_badges;$i++){
+										echo '<div class="card card-badges" style="width: 18rem;">
+										<img src="/images/badges/'.$badges[$i]->filename.'" class="card-img-top" alt="...">
+										<div class="card-body">
+											<center>
+												<h5 class="card-title">'.$badges[$i]->name.'</h5>
+											</center>
+											<center>
+												<p class="card-text" style="font-weight:normal;">'.$badges[$i]->description.'</p>
+											</center><br />
+											<center>
+												<p class="card-text">Earned: '.$badges[$i]->earn_at.'</p>
+											</center>
+										</div>
+									</div>';
+									}
+								}else{
+									echo '<center><p>Belum ada badges</p></center>';
+								}
+							?>
+							<!-- <div class="card card-badges" style="width: 18rem;">
 								<img src="../images/badges.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<center>
@@ -174,7 +208,7 @@
 										<p class="card-text">Earned: 14 Feb, 2022 02:30:00</p>
 									</center>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>

@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GRAPEPro | Perkenalan Pemrograman</title>
+    <title>GRAPEPro | Variabel dan Tipe Data </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/course/course.css">
@@ -42,46 +42,69 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="materi-wrapper">
-                    <h2>Pengantar Pemrograman C</h2>
-                    <center><img src="/images/c-logo.png" width="50%" height="auto"></center><br>
-                    <p>Selamat datang di dunia yang penuh dengan logika, algoritma, dan kreativitas tak terbatas! Jika Anda mencari bahasa pemrograman yang kuat, fleksibel, dan mampu membawa ide-ide Anda menjadi kenyataan, maka Pemrograman C adalah tempat yang tepat untuk memulai perjalanan Anda. Dalam artikel ini, kita akan menjelajahi dasar-dasar Pemrograman C dan mengapa belajar bahasa ini akan membuka pintu menuju dunia yang penuh dengan potensi tanpa batas.</p>
-                    <h3>Mengapa Pemrograman C Penting dalam Era Digital?</h3>
-                    <p>Di era digital yang terus berkembang, pemrograman telah menjadi salah satu keterampilan yang paling dicari. Kemampuan untuk membangun aplikasi, situs web, dan solusi perangkat lunak lainnya sangat berharga di pasar kerja yang kompetitif saat ini. Dan di balik banyak bahasa pemrograman yang ada, Pemrograman C masih memegang posisi yang kuat.</p>
-                    <p>Salah satu alasan utama mengapa Pemrograman C begitu penting adalah karena bahasa ini menjadi landasan bagi banyak bahasa pemrograman modern. Dalam hal ini, mempelajari Pemrograman C bukan hanya tentang menguasai satu bahasa, tetapi juga tentang membangun fondasi yang kokoh untuk memahami bahasa pemrograman lainnya. Bahasa pemrograman seperti C++, C#, dan Objective-C semuanya didasarkan pada C, sehingga pemahaman yang baik tentang C akan memberi Anda keuntungan besar saat mempelajari bahasa-bahasa tersebut.</p>
-                    <h3>Kelebihan Pemrograman C</h3>
+                    <h2>Variabel dan Tipe Data </h2>
+                    <p>Bahasa C adalah bahasa pemrograman yang populer dan kuat. Untuk memahami dasar-dasar pemrograman
+                        dalam C, penting untuk memahami variabel dan tipe data.</p>
+
+                    <h3>Variabel</h3>
+                    <p>Di dalam bahasa C, variabel digunakan untuk menyimpan data. Setiap variabel harus dideklarasikan
+                        sebelum digunakan, dengan menyebutkan tipe data dan nama variabelnya. Contoh deklarasi variabel
+                        dalam C:</p>
+                    <pre>
+    <code>
+      int angka;
+      float nilai;
+      char huruf;
+    </code>
+  </pre>
+                    <p>Dalam contoh di atas, kita mendeklarasikan tiga variabel: 'angka' dengan tipe data int (bilangan
+                        bulat), 'nilai' dengan tipe data float (bilangan desimal), dan 'huruf' dengan tipe data char
+                        (karakter).</p>
+
+                    <h3>Tipe Data</h3>
+                    <p>Di bahasa C, terdapat berbagai tipe data yang dapat digunakan untuk menyimpan jenis data yang
+                        berbeda. Berikut adalah beberapa tipe data umum dalam C:</p>
                     <ul>
-                        <li>Sederhana dan efisien: C memiliki sintaksis yang relatif sederhana, sehingga mudah
-                            dipelajari. Selain itu, C juga memiliki performa yang tinggi dan efisien.</li>
-                        <li>Portabilitas: Program yang ditulis dalam bahasa C dapat dijalankan di berbagai platform dan
-                            sistem operasi yang mendukung kompiler C.</li>
-                        <li>Pemrograman tingkat rendah: C memungkinkan pemrogram untuk mengakses dan mengontrol secara
-                            langsung perangkat keras komputer, sehingga cocok untuk pengembangan sistem operasi dan
-                            perangkat embedded.</li>
-                        <li>Populer dan banyak dukungan: C merupakan salah satu bahasa pemrograman yang paling banyak
-                            digunakan, sehingga tersedia banyak sumber daya dan dukungan komunitas yang bisa
-                            dimanfaatkan.</li>
+                        <li>int: digunakan untuk menyimpan bilangan bulat.</li>
+                        <li>float: digunakan untuk menyimpan bilangan desimal.</li>
+                        <li>char: digunakan untuk menyimpan karakter.</li>
+                        <li>double: digunakan untuk menyimpan bilangan desimal dengan presisi ganda.</li>
+                        <li>short: digunakan untuk menyimpan bilangan bulat pendek.</li>
+                        <li>long: digunakan untuk menyimpan bilangan bulat panjang.</li>
                     </ul>
 
-                    <h3>Contoh Program Sederhana</h3>
-                    <pre><code>#include &lt;stdio.h&gt;
+                    <h3>Contoh Penggunaan</h3>
+                    <p>Contoh penggunaan variabel dan tipe data dalam C:</p>
+                    <pre>
+    <code>
+      #include &lt;stdio.h&gt;
 
-int main() {
-  printf("Hello, World!\n");
-  return 0;
-}
-</code></pre>
-                    <p>Pada contoh di atas, kita menggunakan fungsi <code>printf()</code> untuk menampilkan pesan
-                        "Hello, World!" ke layar. Ini adalah program sederhana yang sering digunakan sebagai langkah
-                        awal dalam mempelajari bahasa pemrograman baru.</p>
+      int main() {
+        int angka = 10;
+        float nilai = 3.14;
+        char huruf = 'A';
 
-                    <h3>Memulai Perjalanan Anda</h3>
-                    <p>Jika Anda tertarik mempelajari Pemrograman C, Anda memiliki banyak opsi untuk memulainya. Ada berbagai buku, tutorial, dan sumber daya online yang tersedia secara gratis atau berbayar. Anda juga dapat mengikuti kursus online atau menghadiri kelas offline jika Anda lebih suka belajar secara langsung dari instruktur.</p>
-                    <p>Saat Anda mulai mempelajari Pemrograman C, penting untuk memahami konsep dasar seperti variabel, tipe data, operasi matematika, dan pengendalian aliran program. Praktek adalah kunci untuk memperkuat pemahaman Anda, jadi jangan takut untuk mencoba menulis kode dan memecahkan masalah kecil menggunakan bahasa C.</p>
-                    <p>Ingatlah bahwa perjalanan dalam pemrograman adalah proses yang berkelanjutan. Teruslah belajar, eksperimen, dan berkolaborasi dengan sesama pengembang. Jangan takut untuk menghadapi tantangan baru dan menjelajahi ide-ide kreatif Anda.</p>
-                    <p>Dengan Pemrograman C, pintu dunia pemrograman akan terbuka lebar bagi Anda. Jadilah penjelajah yang pemberani, siap untuk menghadapi tantangan dan menciptakan karya yang menginspirasi. Selamat menapaki dunia pemrograman!</p>
-                    <p>Selamat memulai perjalanan Anda dalam mempelajari pemrograman C!</p>
+        printf("Angka: %d\n", angka);
+        printf("Nilai: %.2f\n", nilai);
+        printf("Huruf: %c\n", huruf);
 
-                    <button class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,1,"Pengantar Pemrograman C");'>Selanjutnya</button>
+        return 0;
+      }
+    </code>
+  </pre>
+                    <p>Pada contoh di atas, kita mendeklarasikan variabel 'angka' dengan nilai 10, variabel 'nilai'
+                        dengan nilai 3.14, dan variabel 'huruf' dengan nilai 'A'. Kemudian, kita mencetak nilai
+                        variabel-variabel tersebut menggunakan fungsi printf().</p>
+
+                    <h3>Kesimpulan</h3>
+                    <p>Variabel dan tipe data merupakan konsep dasar dalam bahasa pemrograman C. Dengan pemahaman yang
+                        baik tentang variabel dan tipe data, Anda dapat menyimpan dan memanipulasi data dengan efisien
+                        dalam program C.</p>
+
+                    <p>Semoga artikel ini membantu Anda memahami konsep variabel dan tipe data dalam bahasa C!</p>
+                    <a class="btn btn-next f-left" href="<?= base_url('course/'.$id.'/1/2'); ?>">Sebelumnya</a>
+                    <a class="btn btn-next"
+                        onclick='next(<?= $id ?>,1, <?= $curr ?>,3,"Variabel dan Tipe Data");'>Selanjutnya</a>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -117,7 +140,7 @@ int main() {
                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; <?= $xp ?> XP</div>
                     <div class="materi-title">Perkenalan Pemrograman</div>
                     <div class="materi-nav">
-                        <div class="list-materi current">
+                        <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/1'); ?>">Pengantar Pemrograman C </a>
@@ -125,23 +148,25 @@ int main() {
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                    <div class="status <?php if($curr>1) echo 'check';  ?>"><?php if($curr>1) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>1) echo 'check';  ?>">
+                                        <?php if($curr>1) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
-                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C</a>
-                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0 
+                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C </a>
+                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                     <div class="status <?php if($curr>2) echo 'check';  ?>"><?php if($curr>2) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>2) echo 'check';  ?>">
+                                        <?php if($curr>2) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="list-materi">
+                        <div class="list-materi current">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/3'); ?>">Variabel dan Tipe Data </a>

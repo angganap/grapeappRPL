@@ -50,6 +50,7 @@ class Login extends BaseController
                 $is_test = $user[0]->is_test;
                 echo json_encode(array("statusCode"=>200,"isTest"=>$is_test));
                 $session->set('id',$user[0]->id);
+                $session->set('username',$user[0]->username);
             }else{
                 echo json_encode(array("statusCode"=>201));
             }
@@ -91,6 +92,7 @@ class Login extends BaseController
 
          $session = session();
          $session->set('id',$user[0]->id);
+         $session->set('username',$user[0]->username);
          $this->$client->revokeToken();
         
 

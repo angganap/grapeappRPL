@@ -42,8 +42,9 @@
 
                 <div class="col-lg-6">
                     <div class="keterangan">
-                        <img src="/images/logo.png" alt="">
-                        <h4> Sebuah situs untuk memelajari pemrograman dengan cara yang menyenangkan dan terpesonalisasi serta dapat digunakan oleh berbagai kalangan </h4>
+                        <img src="/images/logo.png" alt=""><br>
+                        <h5> Sebuah situs untuk memelajari pemrograman dengan cara yang menyenangkan dan terpesonalisasi serta dapat digunakan oleh berbagai kalangan </h5>
+                        <br>
                         <a class="btn btn-regis" href="../register">REGISTER</a>
                     </div>
                 </div>

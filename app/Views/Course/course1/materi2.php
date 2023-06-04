@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GRAPEPro | Perkenalan Pemrograman</title>
+    <title>GRAPEPro | Sintaks Dasar Bahasa C </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/course/course.css">
@@ -42,46 +42,132 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="materi-wrapper">
-                    <h2>Pengantar Pemrograman C</h2>
-                    <center><img src="/images/c-logo.png" width="50%" height="auto"></center><br>
-                    <p>Selamat datang di dunia yang penuh dengan logika, algoritma, dan kreativitas tak terbatas! Jika Anda mencari bahasa pemrograman yang kuat, fleksibel, dan mampu membawa ide-ide Anda menjadi kenyataan, maka Pemrograman C adalah tempat yang tepat untuk memulai perjalanan Anda. Dalam artikel ini, kita akan menjelajahi dasar-dasar Pemrograman C dan mengapa belajar bahasa ini akan membuka pintu menuju dunia yang penuh dengan potensi tanpa batas.</p>
-                    <h3>Mengapa Pemrograman C Penting dalam Era Digital?</h3>
-                    <p>Di era digital yang terus berkembang, pemrograman telah menjadi salah satu keterampilan yang paling dicari. Kemampuan untuk membangun aplikasi, situs web, dan solusi perangkat lunak lainnya sangat berharga di pasar kerja yang kompetitif saat ini. Dan di balik banyak bahasa pemrograman yang ada, Pemrograman C masih memegang posisi yang kuat.</p>
-                    <p>Salah satu alasan utama mengapa Pemrograman C begitu penting adalah karena bahasa ini menjadi landasan bagi banyak bahasa pemrograman modern. Dalam hal ini, mempelajari Pemrograman C bukan hanya tentang menguasai satu bahasa, tetapi juga tentang membangun fondasi yang kokoh untuk memahami bahasa pemrograman lainnya. Bahasa pemrograman seperti C++, C#, dan Objective-C semuanya didasarkan pada C, sehingga pemahaman yang baik tentang C akan memberi Anda keuntungan besar saat mempelajari bahasa-bahasa tersebut.</p>
-                    <h3>Kelebihan Pemrograman C</h3>
-                    <ul>
-                        <li>Sederhana dan efisien: C memiliki sintaksis yang relatif sederhana, sehingga mudah
-                            dipelajari. Selain itu, C juga memiliki performa yang tinggi dan efisien.</li>
-                        <li>Portabilitas: Program yang ditulis dalam bahasa C dapat dijalankan di berbagai platform dan
-                            sistem operasi yang mendukung kompiler C.</li>
-                        <li>Pemrograman tingkat rendah: C memungkinkan pemrogram untuk mengakses dan mengontrol secara
-                            langsung perangkat keras komputer, sehingga cocok untuk pengembangan sistem operasi dan
-                            perangkat embedded.</li>
-                        <li>Populer dan banyak dukungan: C merupakan salah satu bahasa pemrograman yang paling banyak
-                            digunakan, sehingga tersedia banyak sumber daya dan dukungan komunitas yang bisa
-                            dimanfaatkan.</li>
-                    </ul>
+                    <h2>Sintaks Dasar Bahasa C </h2>
+                    <p>Pemrograman C adalah bahasa pemrograman yang memiliki sintaksis sederhana namun sangat kuat.
+                        Berikut adalah beberapa sintaks dasar yang perlu Anda ketahui saat memulai perjalanan Anda dalam
+                        mempelajari C:</p>
 
-                    <h3>Contoh Program Sederhana</h3>
+                    <h3>1. Struktur Program</h3>
+                    <p>Program C terdiri dari satu atau beberapa fungsi. Setiap program C harus memiliki fungsi
+                        <code>main()</code> sebagai titik masuk utama. Inilah tempat program akan mulai dieksekusi.</p>
                     <pre><code>#include &lt;stdio.h&gt;
 
 int main() {
-  printf("Hello, World!\n");
-  return 0;
+    // Kode program dimulai di sini
+
+    return 0;
 }
 </code></pre>
-                    <p>Pada contoh di atas, kita menggunakan fungsi <code>printf()</code> untuk menampilkan pesan
-                        "Hello, World!" ke layar. Ini adalah program sederhana yang sering digunakan sebagai langkah
-                        awal dalam mempelajari bahasa pemrograman baru.</p>
 
-                    <h3>Memulai Perjalanan Anda</h3>
-                    <p>Jika Anda tertarik mempelajari Pemrograman C, Anda memiliki banyak opsi untuk memulainya. Ada berbagai buku, tutorial, dan sumber daya online yang tersedia secara gratis atau berbayar. Anda juga dapat mengikuti kursus online atau menghadiri kelas offline jika Anda lebih suka belajar secara langsung dari instruktur.</p>
-                    <p>Saat Anda mulai mempelajari Pemrograman C, penting untuk memahami konsep dasar seperti variabel, tipe data, operasi matematika, dan pengendalian aliran program. Praktek adalah kunci untuk memperkuat pemahaman Anda, jadi jangan takut untuk mencoba menulis kode dan memecahkan masalah kecil menggunakan bahasa C.</p>
-                    <p>Ingatlah bahwa perjalanan dalam pemrograman adalah proses yang berkelanjutan. Teruslah belajar, eksperimen, dan berkolaborasi dengan sesama pengembang. Jangan takut untuk menghadapi tantangan baru dan menjelajahi ide-ide kreatif Anda.</p>
-                    <p>Dengan Pemrograman C, pintu dunia pemrograman akan terbuka lebar bagi Anda. Jadilah penjelajah yang pemberani, siap untuk menghadapi tantangan dan menciptakan karya yang menginspirasi. Selamat menapaki dunia pemrograman!</p>
-                    <p>Selamat memulai perjalanan Anda dalam mempelajari pemrograman C!</p>
+                    <h3>2. Komentar</h3>
+                    <p>Komentar digunakan untuk memberikan penjelasan atau dokumentasi pada kode program. Komentar tidak
+                        akan dieksekusi oleh kompiler. Ada dua jenis komentar dalam C:</p>
+                    <pre><code>// Komentar satu baris
 
-                    <button class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,1,"Pengantar Pemrograman C");'>Selanjutnya</button>
+/*
+   Komentar
+   banyak
+   baris
+*/
+</code></pre>
+
+                    <h3>3. Variabel dan Tipe Data</h3>
+                    <p>Anda perlu mendeklarasikan variabel sebelum menggunakannya dalam program C. C menyediakan
+                        beberapa tipe data dasar, seperti <code>int</code> (bilangan bulat), <code>float</code>
+                        (bilangan pecahan), dan <code>char</code> (karakter).</p>
+                    <pre><code>int age = 25;
+float weight = 65.5;
+char grade = 'A';
+</code></pre>
+
+                    <h3>4. Operator</h3>
+                    <p>Operator digunakan untuk melakukan operasi matematika, perbandingan, atau logika dalam C.
+                        Beberapa operator umum termasuk <code>+</code> (penjumlahan), <code>-</code> (pengurangan),
+                        <code>*</code> (perkalian), <code>/</code> (pembagian), dan <code>=</code> (penugasan).</p>
+
+                    <h3>5. Percabangan</h3>
+                    <p>Percabangan memungkinkan program untuk mengambil keputusan berdasarkan kondisi tertentu. Dalam C,
+                        Anda dapat menggunakan pernyataan <code>if</code>, <code>else if</code>, dan <code>else</code>.
+                    </p>
+                    <pre><code>int x = 10;
+
+if (x > 0) {
+    printf("x adalah bilangan positif");
+} else if (x < 0) {
+    printf("x adalah bilangan negatif");
+} else {
+    printf("x adalah nol");
+}
+</code></pre>
+
+                    <h3>6. Perulangan</h3>
+                    <p>Perulangan memungkinkan program untuk menjalankan serangkaian pernyataan berulang kali. Dalam C,
+                        terdapat pernyataan <code>for</code>, <code>while</code>, dan <code>do-while</code> yang dapat
+                        digunakan untuk melakukan perulangan.</p>
+                    <pre><code>for (int i = 1; i <= 5; i++) {
+    printf("%d ", i);
+}
+
+int j = 1;
+while (j <= 5) {
+    printf("%d ", j);
+    j++;
+}
+
+int k = 1;
+do {
+    printf("%d ", k);
+    k++;
+} while (k <= 5);
+</code></pre>
+
+                    <h3>7. Fungsi</h3>
+                    <p>Fungsi adalah blok kode yang dapat dipanggil dan digunakan kembali dalam program. Dalam C, fungsi
+                        harus didefinisikan sebelum digunakan.</p>
+                    <pre><code>int add(int a, int b) {
+    return a + b;
+}
+
+int result = add(5, 3);
+printf("Hasil penjumlahan: %d", result);
+</code></pre>
+
+                    <h3>8. Masukan dan Keluaran</h3>
+                    <p>Untuk berinteraksi dengan pengguna atau membaca/menampilkan data, C menyediakan fungsi
+                        <code>printf()</code> untuk menampilkan output dan <code>scanf()</code> untuk membaca input dari
+                        pengguna.</p>
+                    <pre><code>int num;
+printf("Masukkan sebuah angka: ");
+scanf("%d", &num);
+printf("Angka yang dimasukkan: %d", num);
+</code></pre>
+
+                    <h3>9. Array</h3>
+                    <p>Array digunakan untuk menyimpan sejumlah nilai yang memiliki tipe data yang sama. Dalam C, Anda
+                        dapat membuat dan mengakses array dengan menggunakan indeks.</p>
+                    <pre><code>int numbers[5] = {1, 2, 3, 4, 5};
+
+for (int i = 0; i < 5; i++) {
+    printf("%d ", numbers[i]);
+}
+</code></pre>
+
+                    <h3>Sumber Daya Belajar Lebih Lanjut</h3>
+                    <p>Untuk mempelajari lebih lanjut tentang sintaks dasar C dan pengembangan lebih lanjut dengan
+                        bahasa ini, ada banyak sumber daya yang dapat Anda manfaatkan:</p>
+                    <ul>
+                        <li>Buku: Ada banyak buku yang membahas pemrograman C dengan berbagai tingkatan keahlian.</li>
+                        <li>Kursus Online: Ada kursus online interaktif yang tersedia secara gratis maupun berbayar.
+                        </li>
+                        <li>Contoh Program: Mencoba dan memodifikasi contoh program C yang tersedia di berbagai sumber
+                            untuk meningkatkan pemahaman Anda.</li>
+                        <li>Forum dan Komunitas: Bergabunglah dengan forum atau grup diskusi untuk berinteraksi dengan
+                            sesama pemrogram dan mendapatkan bantuan jika Anda mengalami kesulitan.</li>
+                    </ul>
+
+                    <p>Selamat belajar dan semoga sukses dalam perjalanan Anda dalam mempelajari pemrograman C!</p>
+                    <a class="btn btn-next f-left" href="<?= base_url('course/'.$id.'/1/1'); ?>">Sebelumnya</a>
+                    <a class="btn btn-next" onclick='next(<?= $id ?>,1, <?= $curr ?>,2,"Sintaks Dasar Bahasa C");'>Selanjutnya</a>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -117,7 +203,7 @@ int main() {
                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; <?= $xp ?> XP</div>
                     <div class="materi-title">Perkenalan Pemrograman</div>
                     <div class="materi-nav">
-                        <div class="list-materi current">
+                        <div class="list-materi">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <a href="<?= base_url('course/'.$id.'/1/1'); ?>">Pengantar Pemrograman C </a>
@@ -129,15 +215,15 @@ int main() {
                                 </div>
                             </div>
                         </div>
-                        <div class="list-materi">
+                        <div class="list-materi current">
                             <div class="row">
                                 <div class="col-lg-10">
-                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C</a>
-                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0 
+                                    <a href="<?= base_url('course/'.$id.'/1/2'); ?>">Sintaks Dasar Bahasa C </a>
+                                    <div class="left-game-elm"><i class="bi bi-diamond-fill"></i>&nbsp; 0
                                         Coins&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-star-fill"></i>&nbsp; 100 XP</div>
                                 </div>
                                 <div class="col-lg-2 col-right">
-                                     <div class="status <?php if($curr>2) echo 'check';  ?>"><?php if($curr>2) echo '&check;';  ?></div>
+                                    <div class="status <?php if($curr>2) echo 'check';  ?>"><?php if($curr>2) echo '&check;';  ?></div>
                                 </div>
                             </div>
                         </div>
@@ -196,4 +282,5 @@ int main() {
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="/js/courses/course.js"></script>
+
 </html>

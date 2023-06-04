@@ -81,9 +81,9 @@
                             </div>
                             <div class="col-lg-10 class-section">
                                 <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Pengenalan Pemrograman</a></span><i class="bi bi-calendar-check icon-status"></i>
-                                <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
+                                <span class="class-desc">Course pengenalan pemrograman bahasa C adalah kursus dasar untuk mempelajari bahasa pemrograman C. Membahas sintaks dasar, variabel dan tipe data, serta operator dan ekspresi menggunakan C. Kelas ini ditujukan kepada siswa yang baru memulai belajar bahasa C.</span>
                                 <div class="info-class">
-                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;1x Pengulangan</span>
+                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;4 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Challenge &nbsp;&nbsp;| &nbsp;&nbsp;1x Pengulangan</span>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +99,9 @@
                             </div>
                             <div class="col-lg-10 class-section">
                                 <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Pemrograman Struktur</a></span><?php if($level>=2){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
-                                <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
+                                <span class="class-desc">Course pemrograman terstruktur mengajarkan konsep dan teknik dalam merancang dan mengimplementasikan program dengan struktur yang terorganisir. Peserta akan mempelajari prinsip-prinsip dasar dan penggunaan struktur data.</span>
                                 <div class="info-class">
-                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
+                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;1x Pengulangan</span>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,62 @@
                             </div>
                             <div class="col-lg-10 class-section">
                                 <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Kendali Pemrograman</a></span><?php if($level>=3){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
-                                <span class="class-desc">Lorem ipsum dolor sit amet, consectetur.</span>
+                                <span class="class-desc">Course kendali pemrograman adalah kursus yang mengajarkan penggunaan struktur kendali dalam pemrograman, termasuk pernyataan kondisional dan perulangan.</span>
+                                <div class="info-class">
+                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-class" onclick="goToCourse(4,<?= $level ?>, <?= $id ?>);">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="level">
+                                    <p>Lvl. 4</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 class-section">
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Fungsi</a></span><?php if($level>=4){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
+                                <span class="class-desc">Course fungsi membahas konsep dan penggunaan fungsi dalam pemrograman. Peserta akan mempelajari cara mendefinisikan, memanggil, dan menggunakan parameter dalam fungsi.</span>
+                                <div class="info-class">
+                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Mahir</h5>
+                <div class="box-class" onclick="goToCourse(5,<?= $level ?>, <?= $id ?>);">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="level">
+                                    <p>Lvl. 5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 class-section">
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Kendali Pemrograman</a></span><?php if($level>=5){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
+                                <span class="class-desc">Course array membahas penggunaan dan manipulasi array dalam pemrograman. Peserta akan mempelajari cara membuat, mengakses, dan melakukan operasi pada array.</span>
+                                <div class="info-class">
+                                    <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-class" onclick="goToCourse(6,<?= $level ?>, <?= $id ?>);">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="level">
+                                    <p>Lvl. 6</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 class-section">
+                                <span class="class-title"><a class="link-offset-2 link-underline link-underline-opacity-0">Pointer</a></span><?php if($level>=6){  echo '<i class="bi bi-calendar-check icon-status"></i>';}else{ echo '<i class="bi bi-lock icon-status"></i>'; }?>
+                                <span class="class-desc">Course pointer membahas penggunaan pointer dalam pemrograman. Peserta akan mempelajari konsep dasar dan penggunaan pointer untuk mengelola data.</span>
                                 <div class="info-class">
                                     <span><i class="bi bi-file-text"></i>&nbsp;&nbsp;5 Artikel &nbsp;&nbsp;| &nbsp;&nbsp;<i class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;1 Ujian &nbsp;&nbsp;| &nbsp;&nbsp;0x Pengulangan</span>
                                 </div>
